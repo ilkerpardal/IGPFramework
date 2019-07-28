@@ -2,3 +2,5 @@
 node_modules
 /.vs
 /IgpFramework_Api/.vs/IgpFramework_Api/v15
+/IgpFramework_Data/.vs/IgpFramework_Data/v15
+/IgpFramework_Api/.vs/IgpFramework_Api/DesignTimeBuild

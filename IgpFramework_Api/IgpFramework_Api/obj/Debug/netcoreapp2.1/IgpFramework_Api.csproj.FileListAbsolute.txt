@@ -1,0 +1,14 @@
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\bin\Debug\netcoreapp2.1\IgpFramework_Api.deps.json
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\bin\Debug\netcoreapp2.1\IgpFramework_Api.runtimeconfig.json
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\bin\Debug\netcoreapp2.1\IgpFramework_Api.runtimeconfig.dev.json
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\bin\Debug\netcoreapp2.1\IgpFramework_Api.dll
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\bin\Debug\netcoreapp2.1\IgpFramework_Api.pdb
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\obj\Debug\netcoreapp2.1\IgpFramework_Api.csprojAssemblyReference.cache
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\obj\Debug\netcoreapp2.1\IgpFramework_Api.csproj.CoreCompileInputs.cache
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\obj\Debug\netcoreapp2.1\IgpFramework_Api.RazorAssemblyInfo.cache
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\obj\Debug\netcoreapp2.1\IgpFramework_Api.RazorAssemblyInfo.cs
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\obj\Debug\netcoreapp2.1\IgpFramework_Api.AssemblyInfoInputs.cache
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\obj\Debug\netcoreapp2.1\IgpFramework_Api.AssemblyInfo.cs
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\obj\Debug\netcoreapp2.1\IgpFramework_Api.RazorTargetAssemblyInfo.cache
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\obj\Debug\netcoreapp2.1\IgpFramework_Api.dll
+C:\Projects\vs\IgpFramework_Api\IgpFramework_Api\obj\Debug\netcoreapp2.1\IgpFramework_Api.pdb

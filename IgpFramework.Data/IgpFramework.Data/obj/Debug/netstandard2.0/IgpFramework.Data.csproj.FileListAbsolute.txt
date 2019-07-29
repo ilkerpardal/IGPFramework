@@ -1,0 +1,9 @@
+C:\Projects\vs\IgpFramework.Data\IgpFramework.Data\bin\Debug\netstandard2.0\IgpFramework.Data.deps.json
+C:\Projects\vs\IgpFramework.Data\IgpFramework.Data\bin\Debug\netstandard2.0\IgpFramework.Data.dll
+C:\Projects\vs\IgpFramework.Data\IgpFramework.Data\bin\Debug\netstandard2.0\IgpFramework.Data.pdb
+C:\Projects\vs\IgpFramework.Data\IgpFramework.Data\obj\Debug\netstandard2.0\IgpFramework.Data.csprojAssemblyReference.cache
+C:\Projects\vs\IgpFramework.Data\IgpFramework.Data\obj\Debug\netstandard2.0\IgpFramework.Data.csproj.CoreCompileInputs.cache
+C:\Projects\vs\IgpFramework.Data\IgpFramework.Data\obj\Debug\netstandard2.0\IgpFramework.Data.AssemblyInfoInputs.cache
+C:\Projects\vs\IgpFramework.Data\IgpFramework.Data\obj\Debug\netstandard2.0\IgpFramework.Data.AssemblyInfo.cs
+C:\Projects\vs\IgpFramework.Data\IgpFramework.Data\obj\Debug\netstandard2.0\IgpFramework.Data.dll
+C:\Projects\vs\IgpFramework.Data\IgpFramework.Data\obj\Debug\netstandard2.0\IgpFramework.Data.pdb

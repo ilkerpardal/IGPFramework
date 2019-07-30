@@ -1,0 +1,14 @@
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\bin\Debug\netcoreapp2.0\IgpFramework.Api.deps.json
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\bin\Debug\netcoreapp2.0\IgpFramework.Api.runtimeconfig.json
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\bin\Debug\netcoreapp2.0\IgpFramework.Api.runtimeconfig.dev.json
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\bin\Debug\netcoreapp2.0\IgpFramework.Api.dll
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\bin\Debug\netcoreapp2.0\IgpFramework.Api.pdb
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\bin\Debug\netcoreapp2.0\IgpFramework.Data.dll
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\bin\Debug\netcoreapp2.0\IgpFramework.Data.pdb
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.csprojAssemblyReference.cache
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.csproj.CoreCompileInputs.cache
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.AssemblyInfoInputs.cache
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.AssemblyInfo.cs
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.csproj.CopyComplete
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.dll
+C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.pdb

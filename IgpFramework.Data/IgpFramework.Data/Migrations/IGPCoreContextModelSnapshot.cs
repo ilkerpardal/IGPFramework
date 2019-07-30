@@ -19,10 +19,38 @@ namespace IgpFramework.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("IgpFramework.Data.Menus.Menu", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("MenuAdi")
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<DateTime>("RecordDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("RecordUserId");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("UpdateUserId");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("varchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("IGP_MENU");
+                });
+
             modelBuilder.Entity("IgpFramework.Data.Users.User", b =>
                 {
-                    b.Property<decimal>("Id")
-                        .HasColumnType("decimal(20)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Adi")
                         .HasColumnType("varchar(200)");
@@ -31,7 +59,7 @@ namespace IgpFramework.Data.Migrations
                         .HasColumnType("varchar(20)");
 
                     b.Property<int>("Cinsiyeti")
-                        .HasColumnType("int(1)");
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("DogumTarihi")
                         .HasColumnType("date");
@@ -42,6 +70,11 @@ namespace IgpFramework.Data.Migrations
                     b.Property<string>("KullaniciAdi")
                         .HasColumnType("varchar(200)");
 
+                    b.Property<DateTime>("RecordDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("RecordUserId");
+
                     b.Property<string>("Sifresi")
                         .HasColumnType("varchar(200)");
 
@@ -51,9 +84,136 @@ namespace IgpFramework.Data.Migrations
                     b.Property<decimal>("TcKimlikNo")
                         .HasColumnType("decimal(11)");
 
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("UpdateUserId");
+
                     b.HasKey("Id");
 
-                    b.ToTable("IGP_KULLANICI_BILGILERI");
+                    b.ToTable("IGP_USER");
+                });
+
+            modelBuilder.Entity("IgpFramework.Data.Users.UserMenu", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("MenuId");
+
+                    b.Property<DateTime>("RecordDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("RecordUserId");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("UpdateUserId");
+
+                    b.Property<int>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MenuId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("IGP_USER_MENU_PERMISSIONS");
+                });
+
+            modelBuilder.Entity("IgpFramework.Data.Users.UserPassword", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Password")
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<DateTime>("RecordDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("RecordUserId");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("UpdateUserId");
+
+                    b.Property<int>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("IGP_USER_PASSWORDS");
+                });
+
+            modelBuilder.Entity("IgpFramework.Data.Users.UserSession", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("LoginDate")
+                        .HasColumnType("date");
+
+                    b.Property<DateTime>("LogoutDate")
+                        .HasColumnType("date");
+
+                    b.Property<DateTime>("RecordDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("RecordUserId");
+
+                    b.Property<string>("SessionId")
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("Test");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("UpdateUserId");
+
+                    b.Property<int>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("IGP_USER_SESSIONS");
+                });
+
+            modelBuilder.Entity("IgpFramework.Data.Users.UserMenu", b =>
+                {
+                    b.HasOne("IgpFramework.Data.Menus.Menu", "Menu")
+                        .WithMany("UserMenuPermissions")
+                        .HasForeignKey("MenuId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("IgpFramework.Data.Users.User", "User")
+                        .WithMany("UserMenuPermissions")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("IgpFramework.Data.Users.UserPassword", b =>
+                {
+                    b.HasOne("IgpFramework.Data.Users.User", "User")
+                        .WithMany("UserPasswords")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("IgpFramework.Data.Users.UserSession", b =>
+                {
+                    b.HasOne("IgpFramework.Data.Users.User", "User")
+                        .WithMany("UserSessions")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

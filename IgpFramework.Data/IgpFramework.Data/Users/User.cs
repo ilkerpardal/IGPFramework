@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using IgpFramework.Data.Base;
+using IgpFramework.Data.Menus;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -7,12 +9,9 @@ using System.Text;
 
 namespace IgpFramework.Data.Users
 {
-    [Table("IGP_KULLANICI_BILGILERI")]
-    public class User
+    [Table("IGP_USER")]
+    public class User : TableBase
     {
-        [Key]
-        [Column(TypeName = "decimal(20)")]
-        public decimal Id { get; set; }
         [Column(TypeName = "varchar(200)")]
         public string Adi { get; set; }
         [Column(TypeName = "varchar(200)")]
@@ -29,7 +28,11 @@ namespace IgpFramework.Data.Users
         public decimal TcKimlikNo { get; set; }
         [Column(TypeName = "date")]
         public DateTime DogumTarihi { get; set; }
-        [Column(TypeName = "int(1)")]
+        [Column(TypeName = "int")]
         public int Cinsiyeti { get; set; }
+        public virtual ICollection<UserPassword> UserPasswords { get; set; }
+        public virtual ICollection<UserMenu> UserMenuPermissions { get; set; }
+        public virtual ICollection<UserSession> UserSessions{ get; set; }
+
     }
 }

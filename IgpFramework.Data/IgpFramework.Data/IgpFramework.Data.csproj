@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+	    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+
     <AssemblyName>IgpFramework.Data</AssemblyName>
     <RootNamespace>IgpFramework.Data</RootNamespace>
   </PropertyGroup>

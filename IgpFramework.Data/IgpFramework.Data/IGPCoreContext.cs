@@ -10,7 +10,7 @@ namespace IgpFramework.Data
         {
 
         }
-        
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
         }
@@ -19,7 +19,11 @@ namespace IgpFramework.Data
         {
         }
 
-        public DbSet<Users.User> Users { get; set; }
+        public DbSet<Users.User> User { get; set; }
+        public DbSet<Users.UserPassword> UserPassword { get; set; }
+        public DbSet<Menus.Menu> Menu { get; set; }
+        public DbSet<Users.UserMenu> UserMenu { get; set; }
+        public DbSet<Users.UserSession> UserSession { get; set; }
 
     }
 }

@@ -13,23 +13,23 @@ namespace IgpFramework.Data.Users
     public class User : TableBase
     {
         [Required, Column(TypeName = "varchar(200)")]
-        public string Adi { get; set; }
+        public string Name { get; set; }
         [Required, Column(TypeName = "varchar(200)")]
-        public string Soyadi { get; set; }
+        public string Surname { get; set; }
         [Required, Column(TypeName = "varchar(200)")]
-        public string KullaniciAdi { get; set; }
+        public string UserName { get; set; }
         [Required, Column(TypeName = "varchar(200)")]
-        public string Sifresi { get; set; }
+        public string Password { get; set; }
         [Column(TypeName = "varchar(20)")]
-        public string CepTelefonu { get; set; }
+        public string PhoneNumber { get; set; }
         [Column(TypeName = "varchar(50)")]
-        public string Eposta { get; set; }
+        public string Email { get; set; }
         [Column(TypeName = "decimal(11)")]
-        public decimal? TcKimlikNo { get; set; }
+        public decimal? IdentityKey { get; set; }
         [Column(TypeName = "date")]
-        public DateTime? DogumTarihi { get; set; }
+        public DateTime? Birthdate { get; set; }
         [Column(TypeName = "int")]
-        public int? Cinsiyeti { get; set; }
+        public int? Sex { get; set; }
         public virtual ICollection<UserPassword> UserPasswords { get; set; }
         public virtual ICollection<UserMenu> UserMenuPermissions { get; set; }
         public virtual ICollection<UserSession> UserSessions{ get; set; }

@@ -11,11 +11,11 @@ namespace IgpFramework.Data.Menus
     [Table("IGP_MENU")]
     public class Menu : TableBase
     {
-        public int? AnaId { get; set; }
+        public int? ParentId { get; set; }
         [Required, Column(TypeName = "varchar(100)")]
-        public string MenuAdi { get; set; }
+        public string MenuName { get; set; }
         [Column(TypeName = "varchar(100)")]
-        public string Url { get; set; }
+        public string MenuUrl { get; set; }
 
         public virtual ICollection<UserMenu> UserMenuPermissions { get; set; }
     }

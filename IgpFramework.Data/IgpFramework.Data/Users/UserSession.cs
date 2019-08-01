@@ -19,6 +19,5 @@ namespace IgpFramework.Data.Users
         [Column(TypeName = "date")]
         public DateTime LogoutDate { get; set; }
         public virtual User User { get; set; }
-        public string Test { get; set; }
     }
 }

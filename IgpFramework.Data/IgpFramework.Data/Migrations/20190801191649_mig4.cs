@@ -18,9 +18,9 @@ namespace IgpFramework.Data.Migrations
                     RecordDate = table.Column<DateTime>(type: "date", nullable: false),
                     UpdateUserId = table.Column<int>(nullable: true),
                     UpdateDate = table.Column<DateTime>(type: "date", nullable: true),
-                    AnaId = table.Column<int>(nullable: true),
-                    MenuAdi = table.Column<string>(type: "varchar(100)", nullable: false),
-                    Url = table.Column<string>(type: "varchar(100)", nullable: true)
+                    ParentId = table.Column<int>(nullable: true),
+                    MenuName = table.Column<string>(type: "varchar(100)", nullable: false),
+                    MenuUrl = table.Column<string>(type: "varchar(100)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -37,15 +37,15 @@ namespace IgpFramework.Data.Migrations
                     RecordDate = table.Column<DateTime>(type: "date", nullable: false),
                     UpdateUserId = table.Column<int>(nullable: true),
                     UpdateDate = table.Column<DateTime>(type: "date", nullable: true),
-                    Adi = table.Column<string>(type: "varchar(200)", nullable: false),
-                    Soyadi = table.Column<string>(type: "varchar(200)", nullable: false),
-                    KullaniciAdi = table.Column<string>(type: "varchar(200)", nullable: false),
-                    Sifresi = table.Column<string>(type: "varchar(200)", nullable: false),
-                    CepTelefonu = table.Column<string>(type: "varchar(20)", nullable: true),
-                    Eposta = table.Column<string>(type: "varchar(50)", nullable: true),
-                    TcKimlikNo = table.Column<decimal>(type: "decimal(11)", nullable: true),
-                    DogumTarihi = table.Column<DateTime>(type: "date", nullable: true),
-                    Cinsiyeti = table.Column<int>(type: "int", nullable: true)
+                    Name = table.Column<string>(type: "varchar(200)", nullable: false),
+                    Surname = table.Column<string>(type: "varchar(200)", nullable: false),
+                    UserName = table.Column<string>(type: "varchar(200)", nullable: false),
+                    Password = table.Column<string>(type: "varchar(200)", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "varchar(20)", nullable: true),
+                    Email = table.Column<string>(type: "varchar(50)", nullable: true),
+                    IdentityKey = table.Column<decimal>(type: "decimal(11)", nullable: true),
+                    Birthdate = table.Column<DateTime>(type: "date", nullable: true),
+                    Sex = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -119,8 +119,7 @@ namespace IgpFramework.Data.Migrations
                     UserId = table.Column<int>(nullable: false),
                     SessionId = table.Column<string>(type: "varchar(50)", nullable: true),
                     LoginDate = table.Column<DateTime>(type: "date", nullable: false),
-                    LogoutDate = table.Column<DateTime>(type: "date", nullable: false),
-                    Test = table.Column<string>(nullable: true)
+                    LogoutDate = table.Column<DateTime>(type: "date", nullable: false)
                 },
                 constraints: table =>
                 {

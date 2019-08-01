@@ -1,5 +1,4 @@
-﻿using IgpFramework.Data.Base;
-using IgpFramework.Data.Menus;
+﻿using IgpFramework.Data.Model.Base;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace IgpFramework.Data.Users
+namespace IgpFramework.Data.Model.Users
 {
     [Table("IGP_USER")]
     public class User : TableBase

@@ -1,6 +1,7 @@
 ﻿using IgpFramework.Data.Base;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
@@ -9,6 +10,7 @@ namespace IgpFramework.Data.Users
     [Table("IGP_USER_SESSIONS")]
     public class UserSession : TableBase
     {
+        [Required]
         public int UserId { get; set; }
         [Column(TypeName = "varchar(50)")]
         public string SessionId { get; set; }

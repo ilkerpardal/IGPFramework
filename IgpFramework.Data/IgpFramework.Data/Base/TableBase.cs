@@ -9,12 +9,13 @@ namespace IgpFramework.Data.Base
     public class TableBase
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public int RecordUserId { get; set; }
         [Column(TypeName = "date")]
         public DateTime RecordDate { get; set; }
-        public int UpdateUserId { get; set; }
+        public int? UpdateUserId { get; set; }
         [Column(TypeName = "date")]
-        public DateTime UpdateDate { get; set; }
+        public DateTime? UpdateDate { get; set; }
     }
 }

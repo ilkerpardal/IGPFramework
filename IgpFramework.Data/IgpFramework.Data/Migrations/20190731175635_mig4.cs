@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace IgpFramework.Data.Migrations
 {
-    public partial class mig1 : Migration
+    public partial class mig4 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,9 +16,10 @@ namespace IgpFramework.Data.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     RecordUserId = table.Column<int>(nullable: false),
                     RecordDate = table.Column<DateTime>(type: "date", nullable: false),
-                    UpdateUserId = table.Column<int>(nullable: false),
-                    UpdateDate = table.Column<DateTime>(type: "date", nullable: false),
-                    MenuAdi = table.Column<string>(type: "varchar(100)", nullable: true),
+                    UpdateUserId = table.Column<int>(nullable: true),
+                    UpdateDate = table.Column<DateTime>(type: "date", nullable: true),
+                    AnaId = table.Column<int>(nullable: true),
+                    MenuAdi = table.Column<string>(type: "varchar(100)", nullable: false),
                     Url = table.Column<string>(type: "varchar(100)", nullable: true)
                 },
                 constraints: table =>
@@ -34,17 +35,17 @@ namespace IgpFramework.Data.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     RecordUserId = table.Column<int>(nullable: false),
                     RecordDate = table.Column<DateTime>(type: "date", nullable: false),
-                    UpdateUserId = table.Column<int>(nullable: false),
-                    UpdateDate = table.Column<DateTime>(type: "date", nullable: false),
-                    Adi = table.Column<string>(type: "varchar(200)", nullable: true),
-                    Soyadi = table.Column<string>(type: "varchar(200)", nullable: true),
-                    KullaniciAdi = table.Column<string>(type: "varchar(200)", nullable: true),
-                    Sifresi = table.Column<string>(type: "varchar(200)", nullable: true),
+                    UpdateUserId = table.Column<int>(nullable: true),
+                    UpdateDate = table.Column<DateTime>(type: "date", nullable: true),
+                    Adi = table.Column<string>(type: "varchar(200)", nullable: false),
+                    Soyadi = table.Column<string>(type: "varchar(200)", nullable: false),
+                    KullaniciAdi = table.Column<string>(type: "varchar(200)", nullable: false),
+                    Sifresi = table.Column<string>(type: "varchar(200)", nullable: false),
                     CepTelefonu = table.Column<string>(type: "varchar(20)", nullable: true),
                     Eposta = table.Column<string>(type: "varchar(50)", nullable: true),
-                    TcKimlikNo = table.Column<decimal>(type: "decimal(11)", nullable: false),
-                    DogumTarihi = table.Column<DateTime>(type: "date", nullable: false),
-                    Cinsiyeti = table.Column<int>(type: "int", nullable: false)
+                    TcKimlikNo = table.Column<decimal>(type: "decimal(11)", nullable: true),
+                    DogumTarihi = table.Column<DateTime>(type: "date", nullable: true),
+                    Cinsiyeti = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -59,8 +60,8 @@ namespace IgpFramework.Data.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     RecordUserId = table.Column<int>(nullable: false),
                     RecordDate = table.Column<DateTime>(type: "date", nullable: false),
-                    UpdateUserId = table.Column<int>(nullable: false),
-                    UpdateDate = table.Column<DateTime>(type: "date", nullable: false),
+                    UpdateUserId = table.Column<int>(nullable: true),
+                    UpdateDate = table.Column<DateTime>(type: "date", nullable: true),
                     UserId = table.Column<int>(nullable: false),
                     MenuId = table.Column<int>(nullable: false)
                 },
@@ -89,10 +90,10 @@ namespace IgpFramework.Data.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     RecordUserId = table.Column<int>(nullable: false),
                     RecordDate = table.Column<DateTime>(type: "date", nullable: false),
-                    UpdateUserId = table.Column<int>(nullable: false),
-                    UpdateDate = table.Column<DateTime>(type: "date", nullable: false),
+                    UpdateUserId = table.Column<int>(nullable: true),
+                    UpdateDate = table.Column<DateTime>(type: "date", nullable: true),
                     UserId = table.Column<int>(nullable: false),
-                    Password = table.Column<string>(type: "varchar(50)", nullable: true)
+                    Password = table.Column<string>(type: "varchar(50)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -113,12 +114,13 @@ namespace IgpFramework.Data.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     RecordUserId = table.Column<int>(nullable: false),
                     RecordDate = table.Column<DateTime>(type: "date", nullable: false),
-                    UpdateUserId = table.Column<int>(nullable: false),
-                    UpdateDate = table.Column<DateTime>(type: "date", nullable: false),
+                    UpdateUserId = table.Column<int>(nullable: true),
+                    UpdateDate = table.Column<DateTime>(type: "date", nullable: true),
                     UserId = table.Column<int>(nullable: false),
                     SessionId = table.Column<string>(type: "varchar(50)", nullable: true),
                     LoginDate = table.Column<DateTime>(type: "date", nullable: false),
-                    LogoutDate = table.Column<DateTime>(type: "date", nullable: false)
+                    LogoutDate = table.Column<DateTime>(type: "date", nullable: false),
+                    Test = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

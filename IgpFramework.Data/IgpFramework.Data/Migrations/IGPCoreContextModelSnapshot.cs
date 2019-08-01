@@ -25,7 +25,10 @@ namespace IgpFramework.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("AnaId");
+
                     b.Property<string>("MenuAdi")
+                        .IsRequired()
                         .HasColumnType("varchar(100)");
 
                     b.Property<DateTime>("RecordDate")
@@ -33,10 +36,10 @@ namespace IgpFramework.Data.Migrations
 
                     b.Property<int>("RecordUserId");
 
-                    b.Property<DateTime>("UpdateDate")
+                    b.Property<DateTime?>("UpdateDate")
                         .HasColumnType("date");
 
-                    b.Property<int>("UpdateUserId");
+                    b.Property<int?>("UpdateUserId");
 
                     b.Property<string>("Url")
                         .HasColumnType("varchar(100)");
@@ -53,21 +56,23 @@ namespace IgpFramework.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Adi")
+                        .IsRequired()
                         .HasColumnType("varchar(200)");
 
                     b.Property<string>("CepTelefonu")
                         .HasColumnType("varchar(20)");
 
-                    b.Property<int>("Cinsiyeti")
+                    b.Property<int?>("Cinsiyeti")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("DogumTarihi")
+                    b.Property<DateTime?>("DogumTarihi")
                         .HasColumnType("date");
 
                     b.Property<string>("Eposta")
                         .HasColumnType("varchar(50)");
 
                     b.Property<string>("KullaniciAdi")
+                        .IsRequired()
                         .HasColumnType("varchar(200)");
 
                     b.Property<DateTime>("RecordDate")
@@ -76,18 +81,20 @@ namespace IgpFramework.Data.Migrations
                     b.Property<int>("RecordUserId");
 
                     b.Property<string>("Sifresi")
+                        .IsRequired()
                         .HasColumnType("varchar(200)");
 
                     b.Property<string>("Soyadi")
+                        .IsRequired()
                         .HasColumnType("varchar(200)");
 
-                    b.Property<decimal>("TcKimlikNo")
+                    b.Property<decimal?>("TcKimlikNo")
                         .HasColumnType("decimal(11)");
 
-                    b.Property<DateTime>("UpdateDate")
+                    b.Property<DateTime?>("UpdateDate")
                         .HasColumnType("date");
 
-                    b.Property<int>("UpdateUserId");
+                    b.Property<int?>("UpdateUserId");
 
                     b.HasKey("Id");
 
@@ -107,10 +114,10 @@ namespace IgpFramework.Data.Migrations
 
                     b.Property<int>("RecordUserId");
 
-                    b.Property<DateTime>("UpdateDate")
+                    b.Property<DateTime?>("UpdateDate")
                         .HasColumnType("date");
 
-                    b.Property<int>("UpdateUserId");
+                    b.Property<int?>("UpdateUserId");
 
                     b.Property<int>("UserId");
 
@@ -130,6 +137,7 @@ namespace IgpFramework.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Password")
+                        .IsRequired()
                         .HasColumnType("varchar(50)");
 
                     b.Property<DateTime>("RecordDate")
@@ -137,10 +145,10 @@ namespace IgpFramework.Data.Migrations
 
                     b.Property<int>("RecordUserId");
 
-                    b.Property<DateTime>("UpdateDate")
+                    b.Property<DateTime?>("UpdateDate")
                         .HasColumnType("date");
 
-                    b.Property<int>("UpdateUserId");
+                    b.Property<int?>("UpdateUserId");
 
                     b.Property<int>("UserId");
 
@@ -173,10 +181,10 @@ namespace IgpFramework.Data.Migrations
 
                     b.Property<string>("Test");
 
-                    b.Property<DateTime>("UpdateDate")
+                    b.Property<DateTime?>("UpdateDate")
                         .HasColumnType("date");
 
-                    b.Property<int>("UpdateUserId");
+                    b.Property<int?>("UpdateUserId");
 
                     b.Property<int>("UserId");
 

@@ -5,3 +5,7 @@ node_modules
 /IgpFramework_Data/.vs/IgpFramework_Data/v15
 /IgpFramework_Api/.vs/IgpFramework_Api/DesignTimeBuild
 /IgpFramework.Data/.vs/IgpFramework.Data/v15
+/IgpFramework.Utils/.vs/IgpFramework.Enums.Common/v15/Server/sqlite3
+/IgpFramework.Utils/.vs/IgpFramework.Utils/v15/Server/sqlite3
+/IgpFramework.Utils/.vs/IgpFramework.Utils/v15
+/IgpFramework.Utils/.vs/IgpFramework.Utils/v16

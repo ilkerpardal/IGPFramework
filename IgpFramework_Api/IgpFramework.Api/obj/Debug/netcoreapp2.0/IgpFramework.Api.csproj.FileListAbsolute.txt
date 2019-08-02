@@ -28,3 +28,5 @@ C:\Projects\vs\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFram
 C:\Projects\vs\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.pdb
 C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.Resource.IGPResources.resources
 C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.csproj.GenerateResource.cache
+C:\Projects\vs\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.Resource.IGPResources.resources
+C:\Projects\vs\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.csproj.GenerateResource.cache

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using IgpFramework.Api.Model;
 using IgpFramework.Api.Security.Token;
 using IgpFramework.Data;
-using IgpFramework.Data.Users;
+using IgpFramework.Data.Model.Users;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
@@ -50,7 +50,7 @@ namespace IgpFramework.Api.Security.Services
             var token = tokenHandler.CreateToken(tokenDescriptor);
             //user.token = tokenHandler.WriteToken(tokenDescriptor);
 
-            return new User() { KullaniciAdi = "test", Adi = "ilker", Soyadi = tokenHandler.WriteToken(token) };
+            return new User() { UserName = "test", Name= "ilker", Surname= tokenHandler.WriteToken(token) };
         }
 
         public IEnumerable<User> GetAll()

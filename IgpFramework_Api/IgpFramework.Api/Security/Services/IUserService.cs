@@ -1,4 +1,4 @@
-﻿using IgpFramework.Data.Users;
+﻿using IgpFramework.Data.Model.Users;
 using System.Collections.Generic;
 
 namespace IgpFramework.Api.Security.Services

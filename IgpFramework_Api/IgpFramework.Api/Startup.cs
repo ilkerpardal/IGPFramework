@@ -14,6 +14,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using IgpFramework.Api.Model;
 using IgpFramework.Api.Repositories;
 using AutoMapper;
+using IgpFramework.Api.Security.Token;
+using IgpFramework.Api.Security.Services;
+using IgpFramework.Api.Common;
 
 namespace IgpFramework.Api
 {
@@ -35,17 +38,24 @@ namespace IgpFramework.Api
             services.AddMvc();
             services.AddDbContext<IGPCoreContext>(optionsAction: options => options.UseSqlServer(Configuration.GetConnectionString("sqlConnection")));
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ICrypto, Crypto>();
+            services.AddScoped<IResourceManagerIGP, ResourceManagerIGP>();
+
+            //dependecy injection sayesinde automapperi proje içinde kullanmamızı sağlayacak
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddCors(cors => cors.AddDefaultPolicy(defaultCors => { defaultCors.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod(); }));
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
             {
                 opt.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
                 {
-                    ValidateAudience = false,
-                    ValidateIssuer = false,
                     ValidateLifetime = true,
-                    ValidIssuer = tokenManagement.Issuer,
-                    ValidAudience = tokenManagement.Audience
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = SignHandler.GetSecurityKey(tokenManagement.Secret),
+                    ValidateAudience = true,
+                    ValidateIssuer = true,
+                    ValidAudience = "mysite.com",
+                    ValidIssuer = "mysite.com"
                 };
             });
 

@@ -1,9 +1,0 @@
-C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\obj\Debug\netstandard2.0\IgpFramework.Dto.Common.csproj.CoreCompileInputs.cache
-C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\obj\Debug\netstandard2.0\IgpFramework.Dto.Common.AssemblyInfoInputs.cache
-C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\obj\Debug\netstandard2.0\IgpFramework.Dto.Common.AssemblyInfo.cs
-C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\bin\Debug\netstandard2.0\IgpFramework.Dto.Common.deps.json
-C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\bin\Debug\netstandard2.0\IgpFramework.Dto.Common.dll
-C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\bin\Debug\netstandard2.0\IgpFramework.Dto.Common.pdb
-C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\obj\Debug\netstandard2.0\IgpFramework.Dto.Common.dll
-C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\obj\Debug\netstandard2.0\IgpFramework.Dto.Common.pdb
-C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\obj\Debug\netstandard2.0\IgpFramework.Dto.Common.csprojAssemblyReference.cache

@@ -17,5 +17,7 @@ namespace IgpFramework.Dto.Common.Users
         public DateTime? Birthdate { get; set; }
         public int? Sex { get; set; }
         public string Token { get; set; }
+
+        public virtual ICollection<UserMenuDto> UserMenuPermissions { get; set; }
     }
 }

@@ -30,7 +30,7 @@ namespace IgpFramework.Api.Controllers
         public async Task<IActionResult> Authenticate([FromBody]User userParam)
         {
             var user = await _userService.Authenticate(userParam.UserName, userParam.Password);
-            if (user.IsAssigned()) return BadRequest(new { Massage = _resourceManager.GetResourceValue("InvalidPasswordOrUsername") });
+            if (!user.IsAssigned()) return BadRequest(new { Massage = _resourceManager.GetResourceValue("InvalidPasswordOrUsername") });
             return Ok(user);
         }
 

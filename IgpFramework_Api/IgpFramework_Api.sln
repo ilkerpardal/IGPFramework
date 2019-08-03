@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IgpFramework.Api", "IgpFram
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IgpFramework.Dto.Common", "IgpFramework.Dto.Common\IgpFramework.Dto.Common.csproj", "{C9CAC147-F251-45F5-BE46-895773247FFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Igp.Business.Common", "Igp.Business.Common\Igp.Business.Common.csproj", "{580017D9-8EF3-4FBA-A661-8AFD1443F03B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C9CAC147-F251-45F5-BE46-895773247FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9CAC147-F251-45F5-BE46-895773247FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9CAC147-F251-45F5-BE46-895773247FFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{580017D9-8EF3-4FBA-A661-8AFD1443F03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{580017D9-8EF3-4FBA-A661-8AFD1443F03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{580017D9-8EF3-4FBA-A661-8AFD1443F03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{580017D9-8EF3-4FBA-A661-8AFD1443F03B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

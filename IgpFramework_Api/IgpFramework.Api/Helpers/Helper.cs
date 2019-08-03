@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using IgpFramework.Data.Model.Users;
+using IgpFramework.Dto.Common.Users;
 using System;
 
 namespace IgpFramework.Api.Helpers
@@ -7,13 +9,19 @@ namespace IgpFramework.Api.Helpers
     {
         public static bool IsAssigned(this object value)
         {
-            return (value == null || (value is string stringValue && String.IsNullOrEmpty(stringValue)));
+            return !(value == null || (value is string stringValue && String.IsNullOrEmpty(stringValue)));
         }
 
         public static T Map<T>(this object source) {
-            var config = new MapperConfiguration(cfg => { cfg.CreateMap<object, T>(); });
-            IMapper mapper = config.CreateMapper();
-            return mapper.Map<object, T>(source);
+            try
+            {
+                Mapper.Initialize(config => { config.CreateMap(source.GetType(), typeof(T)); });               
+                return Mapper.Map<T>(source);
+            }
+            catch (Exception ex) {
+                return default(T);
+            }
+
         }
     }
 }

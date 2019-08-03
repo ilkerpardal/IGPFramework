@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using IgpFramework.Data;
-using IgpFramework.Data.Users;
+using IgpFramework.Data.Model.Users;
 using Microsoft.EntityFrameworkCore;
 
 namespace IgpFramework.Api.Repositories

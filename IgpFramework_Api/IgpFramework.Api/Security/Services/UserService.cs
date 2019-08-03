@@ -15,6 +15,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using IgpFramework.Api.Helpers;
 using AutoMapper;
+using IgpFramework.Api.Repositories;
 
 namespace IgpFramework.Api.Security.Services
 {
@@ -23,21 +24,23 @@ namespace IgpFramework.Api.Security.Services
         private readonly IGPCoreContext _context;
         private readonly TokenManagement _tokenManagement;
         private readonly ICrypto _crypto;
-
-        public UserService(IGPCoreContext context, IOptions<TokenManagement> tokenManagement, ICrypto crypto)
+        private readonly IUserRepository _repository;
+        public UserService(IGPCoreContext context, IOptions<TokenManagement> tokenManagement, ICrypto crypto, IUserRepository repository)
         {
             _context = context;
             _tokenManagement = tokenManagement.Value;
             _crypto = crypto;
+            _repository = repository;
         }
 
         public UserDto Authenticate(string userName, string password)
         {
             var passwordHash = _crypto.Md5Hashing(password);
-            var user = _context.User.FirstOrDefault(x => x.UserName == userName);
+            User user = null;// await _repository.FindUserAsync.FirstOrDefault(x => x.UserName == userName);
             if (user.IsAssigned())
             {
-                if (user.Password == passwordHash) {
+                if (user.Password == passwordHash)
+                {
                     var tokenHandler = new JwtSecurityTokenHandler();
                     var key = SignHandler.GetSecurityKey("vwaXxKAsTQ5msMfiYNYdzd4KBpjR5Y4MIGP");
                     var tokenDescriptor = new SecurityTokenDescriptor
@@ -53,7 +56,7 @@ namespace IgpFramework.Api.Security.Services
                         SigningCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature)
                     };
                     var token = tokenHandler.CreateToken(tokenDescriptor);
-                    var userDto= user.GetMap<UserDto>();
+                    var userDto = user.Map<UserDto>();
                     userDto.Token = tokenHandler.WriteToken(token);
                     return userDto;
                 }
@@ -62,18 +65,19 @@ namespace IgpFramework.Api.Security.Services
                     throw new Exception("Password error");//ToDo: Mesajlara taşınacak 
                 }
             }
-            else {
+            else
+            {
                 throw new Exception("User not found");//ToDo: Mesajlara taşınacak 
             }
 
             //return _context.User.FirstOrDefault(user => user.KullaniciAdi == userName && user.Sifresi == passwordHash);
-            
+
         }
 
         public IEnumerable<UserDto> GetAll()
         {
-            var users= _context.User.AsEnumerable();
-            return users.GetMap<IEnumerable<UserDto>>();
-        }        
+            var users = _context.User.AsEnumerable();
+            return users.Map<IEnumerable<UserDto>>();
+        }
     }
 }

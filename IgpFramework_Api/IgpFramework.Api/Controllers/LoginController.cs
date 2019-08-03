@@ -7,7 +7,7 @@ using IgpFramework.Api.Common;
 using IgpFramework.Api.Controllers.Base;
 using IgpFramework.Api.Helpers;
 using IgpFramework.Api.Security.Services;
-using IgpFramework.Data.Users;
+using IgpFramework.Data.Model.Users;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,7 +29,7 @@ namespace IgpFramework.Api.Controllers
         [HttpPost]
         public IActionResult Authenticate([FromBody]User userParam)
         {
-            var user = _userService.Authenticate(userParam.KullaniciAdi, userParam.Sifresi);
+            var user = _userService.Authenticate(userParam.UserName, userParam.Password);
             if (user.IsAssigned()) return BadRequest(new { Massage = _resourceManager.GetResourceValue("InvalidPasswordOrUsername") });
             return Ok(user);
         }

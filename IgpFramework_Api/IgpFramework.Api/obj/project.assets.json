@@ -5123,6 +5123,16 @@
         "runtime": {
           "bin/placeholder/IgpFramework.Data.dll": {}
         }
+      },
+      "IgpFramework.Dto.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/IgpFramework.Dto.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IgpFramework.Dto.Common.dll": {}
+        }
       }
     }
   },
@@ -13868,6 +13878,11 @@
       "type": "project",
       "path": "../../IgpFramework.Data/IgpFramework.Data/IgpFramework.Data.csproj",
       "msbuildProject": "../../IgpFramework.Data/IgpFramework.Data/IgpFramework.Data.csproj"
+    },
+    "IgpFramework.Dto.Common/1.0.0": {
+      "type": "project",
+      "path": "../IgpFramework.Dto.Common/IgpFramework.Dto.Common.csproj",
+      "msbuildProject": "../IgpFramework.Dto.Common/IgpFramework.Dto.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13875,6 +13890,7 @@
       "AutoMapper >= 8.1.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 6.1.1",
       "IgpFramework.Data >= 1.0.0",
+      "IgpFramework.Dto.Common >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.8",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 2.2.0",
       "Microsoft.AspNetCore.Cors >= 2.2.0",
@@ -13915,6 +13931,9 @@
           "projectReferences": {
             "C:\\Projects\\vs\\IgpFramework.Data\\IgpFramework.Data\\IgpFramework.Data.csproj": {
               "projectPath": "C:\\Projects\\vs\\IgpFramework.Data\\IgpFramework.Data\\IgpFramework.Data.csproj"
+            },
+            "C:\\Projects\\vs\\IgpFramework_Api\\IgpFramework.Dto.Common\\IgpFramework.Dto.Common.csproj": {
+              "projectPath": "C:\\Projects\\vs\\IgpFramework_Api\\IgpFramework.Dto.Common\\IgpFramework.Dto.Common.csproj"
             }
           }
         }

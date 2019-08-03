@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\IgpFramework.Data\IgpFramework.Data\IgpFramework.Data.csproj" />
+    <ProjectReference Include="..\IgpFramework.Dto.Common\IgpFramework.Dto.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>

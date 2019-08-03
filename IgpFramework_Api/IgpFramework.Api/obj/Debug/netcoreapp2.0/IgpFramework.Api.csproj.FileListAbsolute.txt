@@ -30,3 +30,5 @@ C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\obj\De
 C:\Users\ILKER-PC\Documents\Projects\VS\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.csproj.GenerateResource.cache
 C:\Projects\vs\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.Resource.IGPResources.resources
 C:\Projects\vs\IgpFramework_Api\IgpFramework.Api\obj\Debug\netcoreapp2.0\IgpFramework.Api.csproj.GenerateResource.cache
+C:\Projects\vs\IgpFramework_Api\IgpFramework.Api\bin\Debug\netcoreapp2.0\IgpFramework.Dto.Common.dll
+C:\Projects\vs\IgpFramework_Api\IgpFramework.Api\bin\Debug\netcoreapp2.0\IgpFramework.Dto.Common.pdb

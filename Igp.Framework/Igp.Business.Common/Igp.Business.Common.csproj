@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\IgpFramework.Data\IgpFramework.Data\Igp.Data.Common.csproj" />
+    <ProjectReference Include="..\Igp.Core\Igp.Core.csproj" />
+    <ProjectReference Include="..\IgpFramework.Dto.Common\Igp.Dto.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.IdentityModel.Tokens.Jwt">
+      <HintPath>..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\system.identitymodel.tokens.jwt\5.3.0\lib\netstandard2.0\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

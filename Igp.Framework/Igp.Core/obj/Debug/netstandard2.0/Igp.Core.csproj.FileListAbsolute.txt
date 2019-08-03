@@ -1,0 +1,15 @@
+C:\Projects\vs\IgpFramework_Api\Igp.Core\bin\Debug\netstandard2.0\Igp.Core.deps.json
+C:\Projects\vs\IgpFramework_Api\Igp.Core\bin\Debug\netstandard2.0\Igp.Core.dll
+C:\Projects\vs\IgpFramework_Api\Igp.Core\obj\Debug\netstandard2.0\Igp.Core.csprojAssemblyReference.cache
+C:\Projects\vs\IgpFramework_Api\Igp.Core\obj\Debug\netstandard2.0\Igp.Core.csproj.CoreCompileInputs.cache
+C:\Projects\vs\IgpFramework_Api\Igp.Core\obj\Debug\netstandard2.0\Igp.Core.AssemblyInfoInputs.cache
+C:\Projects\vs\IgpFramework_Api\Igp.Core\obj\Debug\netstandard2.0\Igp.Core.AssemblyInfo.cs
+C:\Projects\vs\IgpFramework_Api\Igp.Core\bin\Debug\netstandard2.0\Igp.Core.pdb
+C:\Projects\vs\IgpFramework_Api\Igp.Core\obj\Debug\netstandard2.0\Igp.Core.dll
+C:\Projects\vs\IgpFramework_Api\Igp.Core\obj\Debug\netstandard2.0\Igp.Core.pdb
+C:\Projects\vs\IgpFramework_Api\Igp.Core\bin\Debug\netstandard2.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Projects\vs\IgpFramework_Api\Igp.Core\bin\Debug\netstandard2.0\System.IdentityModel.Tokens.Jwt.pdb
+C:\Projects\vs\IgpFramework_Api\Igp.Core\bin\Debug\netstandard2.0\System.IdentityModel.Tokens.Jwt.xml
+C:\Projects\vs\IgpFramework_Api\Igp.Core\obj\Debug\netstandard2.0\Igp.Core.csproj.CopyComplete
+C:\Projects\vs\IgpFramework_Api\Igp.Core\bin\Debug\netstandard2.0\Igp.Dto.Common.dll
+C:\Projects\vs\IgpFramework_Api\Igp.Core\bin\Debug\netstandard2.0\Igp.Dto.Common.pdb

@@ -33,10 +33,10 @@ namespace IgpFramework.Api.Security.Services
             _repository = repository;
         }
 
-        public UserDto Authenticate(string userName, string password)
+        public async Task<UserDto> Authenticate(string userName, string password)
         {
             var passwordHash = _crypto.Md5Hashing(password);
-            User user = null;// await _repository.FindUserAsync.FirstOrDefault(x => x.UserName == userName);
+            User user = await _repository.FindUserByUserNameAsync(userName);
             if (user.IsAssigned())
             {
                 if (user.Password == passwordHash)

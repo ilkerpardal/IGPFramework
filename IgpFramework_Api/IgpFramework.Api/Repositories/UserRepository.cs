@@ -40,5 +40,10 @@ namespace IgpFramework.Api.Repositories
         {
            return _context.User.FindAsync(userId);
         }
+
+        public Task<User> FindUserByUserNameAsync(string userName)
+        {
+            return _context.User.FirstOrDefaultAsync(x => x.UserName == userName);
+        }
     }
 }

@@ -27,9 +27,9 @@ namespace IgpFramework.Api.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult Authenticate([FromBody]User userParam)
+        public async Task<IActionResult> Authenticate([FromBody]User userParam)
         {
-            var user = _userService.Authenticate(userParam.UserName, userParam.Password);
+            var user = await _userService.Authenticate(userParam.UserName, userParam.Password);
             if (user.IsAssigned()) return BadRequest(new { Massage = _resourceManager.GetResourceValue("InvalidPasswordOrUsername") });
             return Ok(user);
         }

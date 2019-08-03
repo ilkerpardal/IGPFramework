@@ -13,5 +13,6 @@ namespace IgpFramework.Api.Repositories
         void UpdateUserAsync(User user);
         Task RemoveUserAsync(int userId);
         Task<User> FindUserAsync(int userId);
+        Task<User> FindUserByUserNameAsync(string userName);
     }
 }

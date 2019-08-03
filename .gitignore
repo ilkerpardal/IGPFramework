@@ -1,2 +1,15 @@
 # Add any directories, files, or patterns you don't want to be tracked by version control
 node_modules
+/.vs
+/IgpFramework_Api/.vs/IgpFramework_Api/v15
+/IgpFramework_Data/.vs/IgpFramework_Data/v15
+/IgpFramework_Api/.vs/IgpFramework_Api/DesignTimeBuild
+/IgpFramework.Data/.vs/IgpFramework.Data/v15
+/IgpFramework.Utils/.vs/IgpFramework.Enums.Common/v15/Server/sqlite3
+/IgpFramework.Utils/.vs/IgpFramework.Utils/v15/Server/sqlite3
+/IgpFramework.Utils/.vs/IgpFramework.Utils/v15
+/IgpFramework.Utils/.vs/IgpFramework.Utils/v16
+/Igp.Framework/.vs/Igp.Framework/v15/Server/sqlite3
+/Igp.Framework/.vs/Igp.Framework/v16
+/Igp.Framework/.vs/IgpFramework_Api/v15/Server/sqlite3
+/Igp.Framework/.vs/IgpFramework_Api/v15

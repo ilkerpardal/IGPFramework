@@ -1,0 +1,17 @@
+C:\Projects\vs\IgpFramework_Api\Igp.Enums.Common\bin\Debug\netstandard2.0\Igp.Enums.Common.deps.json
+C:\Projects\vs\IgpFramework_Api\Igp.Enums.Common\bin\Debug\netstandard2.0\Igp.Enums.Common.dll
+C:\Projects\vs\IgpFramework_Api\Igp.Enums.Common\bin\Debug\netstandard2.0\Igp.Enums.Common.pdb
+C:\Projects\vs\IgpFramework_Api\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.csprojAssemblyReference.cache
+C:\Projects\vs\IgpFramework_Api\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.csproj.CoreCompileInputs.cache
+C:\Projects\vs\IgpFramework_Api\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.AssemblyInfoInputs.cache
+C:\Projects\vs\IgpFramework_Api\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.AssemblyInfo.cs
+C:\Projects\vs\IgpFramework_Api\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.dll
+C:\Projects\vs\IgpFramework_Api\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.pdb
+C:\Projects\vs\Igp.Framework\Igp.Enums.Common\bin\Debug\netstandard2.0\Igp.Enums.Common.deps.json
+C:\Projects\vs\Igp.Framework\Igp.Enums.Common\bin\Debug\netstandard2.0\Igp.Enums.Common.dll
+C:\Projects\vs\Igp.Framework\Igp.Enums.Common\bin\Debug\netstandard2.0\Igp.Enums.Common.pdb
+C:\Projects\vs\Igp.Framework\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.csproj.CoreCompileInputs.cache
+C:\Projects\vs\Igp.Framework\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.AssemblyInfoInputs.cache
+C:\Projects\vs\Igp.Framework\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.AssemblyInfo.cs
+C:\Projects\vs\Igp.Framework\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.dll
+C:\Projects\vs\Igp.Framework\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.pdb

@@ -1,0 +1,17 @@
+C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\bin\Debug\netstandard2.0\Igp.Dto.Common.deps.json
+C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\bin\Debug\netstandard2.0\Igp.Dto.Common.dll
+C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\bin\Debug\netstandard2.0\Igp.Dto.Common.pdb
+C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.csproj.CoreCompileInputs.cache
+C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.AssemblyInfoInputs.cache
+C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.AssemblyInfo.cs
+C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.dll
+C:\Projects\vs\IgpFramework_Api\IgpFramework.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.pdb
+C:\Projects\vs\Igp.Framework\Igp.Dto.Common\bin\Debug\netstandard2.0\Igp.Dto.Common.deps.json
+C:\Projects\vs\Igp.Framework\Igp.Dto.Common\bin\Debug\netstandard2.0\Igp.Dto.Common.dll
+C:\Projects\vs\Igp.Framework\Igp.Dto.Common\bin\Debug\netstandard2.0\Igp.Dto.Common.pdb
+C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.csproj.CoreCompileInputs.cache
+C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.AssemblyInfoInputs.cache
+C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.AssemblyInfo.cs
+C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.dll
+C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.pdb
+C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.csprojAssemblyReference.cache

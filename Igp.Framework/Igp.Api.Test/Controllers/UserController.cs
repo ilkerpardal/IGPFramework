@@ -21,6 +21,8 @@ namespace IgpFramework.Api.Controllers
         [Route("api/test")]
         public IActionResult test()
         {
+            var user = UserIdentity;
+
             _userService.SaveUser(
             new Dto.Common.Users.UserDto()
             {

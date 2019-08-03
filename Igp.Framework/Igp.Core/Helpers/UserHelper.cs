@@ -10,7 +10,11 @@ namespace Igp.Core.Helpers
     {
         public static UserDto UserIdentity
         {
-            get { return Thread.CurrentPrincipal?.Identity != null ? Thread.CurrentPrincipal.Identity as UserDto : new UserDto(); }
+            get
+            {
+                return Thread.CurrentPrincipal?.Identity != null ?
+                       (Thread.CurrentPrincipal.Identity as Igp.Security.IgpIdentity).User : new UserDto();
+            }
         }
     }
 }

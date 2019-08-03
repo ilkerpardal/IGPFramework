@@ -11,10 +11,6 @@ namespace IgpFramework.Api.Controllers
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class MenuController : Controller
     {
-        [Route("api/test")]
-        public IActionResult test()
-        {
-            return Ok("ok");
-        }
+        
     }
 }

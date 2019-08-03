@@ -54,12 +54,19 @@ namespace Igp.Business.Common.BusinessLayers
             }
         }
 
-        public void SaveUser(UserDto user) {
-        }
-
         public void GetUser() { }
 
-        public void DeleteUser() {
+        public async void SaveUser(UserDto user)
+        {
+            User _user = new User();
+            _user = user.Map<User>();
+            await _userRepository.AddUserAsync(_user);
+            await _unitofWork.CompleteAsync();
+        }
+
+        public async void DeleteUser(int userId) {
+            await _userRepository.RemoveUserAsync(userId);
+            await _unitofWork.CompleteAsync();
         }
 
         public void Dispose()

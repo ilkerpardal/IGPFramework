@@ -7,7 +7,7 @@ namespace IgpFramework.Api.Security.Services
 {
     public interface IUserService
     {
-        void SaveUser(UserDto user);
+        void SaveUser( UserDto user);
         Task<UserDto> Authenticate(string userName, string password);
         IEnumerable<UserDto> GetAll();
     }

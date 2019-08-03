@@ -42,3 +42,5 @@ C:\Projects\vs\Igp.Framework\Igp.Api.Test\bin\Debug\netcoreapp2.0\Igp.Dto.Common
 C:\Projects\vs\Igp.Framework\Igp.Api.Test\obj\Debug\netcoreapp2.0\Igp.Api.Test.csproj.CopyComplete
 C:\Projects\vs\Igp.Framework\Igp.Api.Test\obj\Debug\netcoreapp2.0\Igp.Api.Test.dll
 C:\Projects\vs\Igp.Framework\Igp.Api.Test\obj\Debug\netcoreapp2.0\Igp.Api.Test.pdb
+C:\Projects\vs\Igp.Framework\Igp.Api.Test\bin\Debug\netcoreapp2.0\Igp.Security.dll
+C:\Projects\vs\Igp.Framework\Igp.Api.Test\bin\Debug\netcoreapp2.0\Igp.Security.pdb

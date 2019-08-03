@@ -11,6 +11,7 @@
         "dependencies": {
           "AutoMapper": "8.1.1",
           "Igp.Dto.Common": "1.0.0",
+          "Igp.Security": "1.0.0",
           "Microsoft.IdentityModel.Tokens": "5.5.0",
           "NETStandard.Library": "2.0.3",
           "System.IdentityModel.Tokens.Jwt": "5.3.0.0"
@@ -637,6 +638,14 @@
           "Igp.Dto.Common.dll": {}
         }
       },
+      "Igp.Security/1.0.0": {
+        "dependencies": {
+          "Igp.Dto.Common": "1.0.0"
+        },
+        "runtime": {
+          "Igp.Security.dll": {}
+        }
+      },
       "System.IdentityModel.Tokens.Jwt/5.3.0.0": {
         "runtime": {
           "System.IdentityModel.Tokens.Jwt.dll": {
@@ -1004,6 +1013,11 @@
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
     },
     "Igp.Dto.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Igp.Security/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

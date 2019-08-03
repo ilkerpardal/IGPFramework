@@ -19,7 +19,7 @@ namespace Igp.Core.Helpers
                 Mapper.Initialize(config => { config.CreateMap(source.GetType(), typeof(T)); });
                 return Mapper.Map<T>(source);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return default(T);
             }

@@ -17,7 +17,6 @@ namespace IgpFramework.Api.Controllers
         [Route("api/menu")]
         public IActionResult Menus()
         {
-            var user = GetUserInfo();
             return Ok("ok");
         }
     }

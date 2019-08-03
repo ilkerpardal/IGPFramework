@@ -36,3 +36,5 @@ C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\System
 C:\Projects\vs\Igp.Framework\Igp.Business.Common\obj\Debug\netstandard2.0\Igp.Business.Common.csproj.CopyComplete
 C:\Projects\vs\Igp.Framework\Igp.Business.Common\obj\Debug\netstandard2.0\Igp.Business.Common.dll
 C:\Projects\vs\Igp.Framework\Igp.Business.Common\obj\Debug\netstandard2.0\Igp.Business.Common.pdb
+C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\Igp.Security.dll
+C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\Igp.Security.pdb

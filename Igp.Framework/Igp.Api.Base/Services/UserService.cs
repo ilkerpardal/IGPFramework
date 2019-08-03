@@ -6,6 +6,9 @@ using Microsoft.Extensions.Options;
 using Igp.Business.Common.BusinessLayers;
 using Microsoft.Extensions.Configuration;
 using Igp.Core.Security.Token;
+using System.Threading;
+using System;
+using Igp.Core.Helpers;
 
 namespace IgpFramework.Api.Security.Services
 {
@@ -22,11 +25,18 @@ namespace IgpFramework.Api.Security.Services
 
         public async Task<UserDto> Authenticate(string userName, string password)
         {
-            using (UserBL userBl = new UserBL(_configuration))
+            try
             {
-                var user=  await userBl.VerifyUser(userName, password);
-                user.Token = TokenHelper.GetToken(user);
-                return user;
+                using (UserBL userBl = new UserBL(_configuration))
+                {
+                    var user = await userBl.VerifyUser(userName, password);
+                    if (user.IsAssigned())
+                        user.Token = TokenHelper.GetToken(user);
+                    return user;
+                }
+            }
+            catch (Exception ex) {
+                throw ex;
             }
         }
 
@@ -35,6 +45,7 @@ namespace IgpFramework.Api.Security.Services
             using (UserBL userBl = new UserBL(_configuration))
             {
                 userBl.SaveUser(user);
+                userBl.CompleteAsync();
             }
         }
 

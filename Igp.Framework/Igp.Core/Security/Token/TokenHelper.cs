@@ -1,10 +1,13 @@
-﻿using IgpFramework.Dto.Common.Users;
+﻿using Igp.Security;
+using IgpFramework.Dto.Common.Users;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using System.Threading;
 
 namespace Igp.Core.Security.Token
 {
@@ -12,14 +15,17 @@ namespace Igp.Core.Security.Token
     {
         public static string GetToken(UserDto user)
         {
+            var identity = new IgpIdentity(user);
+            var principal = new IgpPrincipal(identity);
+            Thread.CurrentPrincipal = principal;
+
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = SignHandler.GetSecurityKey("vwaXxKAsTQ5msMfiYNYdzd4KBpjR5Y4MIGP");
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim("userName",user.UserName),
-                    new Claim("userId",user.Id.ToString())
+                    new Claim("UserIdentity",JsonConvert.SerializeObject(user))
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),
                 Audience = "mysite.com",

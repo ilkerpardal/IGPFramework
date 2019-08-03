@@ -1226,6 +1226,7 @@
         "dependencies": {
           "AutoMapper": "8.1.1",
           "Igp.Dto.Common": "1.0.0",
+          "Igp.Security": "1.0.0",
           "Microsoft.IdentityModel.Tokens": "5.5.0"
         },
         "compile": {
@@ -1257,6 +1258,19 @@
         },
         "runtime": {
           "bin/placeholder/Igp.Dto.Common.dll": {}
+        }
+      },
+      "Igp.Security/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Igp.Dto.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Igp.Security.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Igp.Security.dll": {}
         }
       }
     }
@@ -4941,6 +4955,11 @@
       "type": "project",
       "path": "../Igp.Dto.Common/Igp.Dto.Common.csproj",
       "msbuildProject": "../Igp.Dto.Common/Igp.Dto.Common.csproj"
+    },
+    "Igp.Security/1.0.0": {
+      "type": "project",
+      "path": "../Igp.Security/Igp.Security.csproj",
+      "msbuildProject": "../Igp.Security/Igp.Security.csproj"
     }
   },
   "projectFileDependencyGroups": {

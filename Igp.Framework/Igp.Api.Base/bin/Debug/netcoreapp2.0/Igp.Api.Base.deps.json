@@ -4801,6 +4801,7 @@
         "dependencies": {
           "AutoMapper": "8.1.1",
           "Igp.Dto.Common": "1.0.0",
+          "Igp.Security": "1.0.0",
           "Microsoft.IdentityModel.Tokens": "5.5.0"
         },
         "runtime": {
@@ -4828,6 +4829,17 @@
         },
         "compile": {
           "Igp.Dto.Common.dll": {}
+        }
+      },
+      "Igp.Security/1.0.0": {
+        "dependencies": {
+          "Igp.Dto.Common": "1.0.0"
+        },
+        "runtime": {
+          "Igp.Security.dll": {}
+        },
+        "compile": {
+          "Igp.Security.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.0.0": {
@@ -7212,6 +7224,11 @@
       "sha512": ""
     },
     "Igp.Dto.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Igp.Security/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

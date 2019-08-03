@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Igp.Dto.Common\Igp.Dto.Common.csproj" />
+    <ProjectReference Include="..\Igp.Security\Igp.Security.csproj" />
   </ItemGroup>
 
   <ItemGroup>

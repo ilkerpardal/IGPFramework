@@ -11,7 +11,7 @@ namespace IgpFramework.Api.Controllers
 {
     [Produces("application/json")]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-    public class UserController : Controller
+    public class UserController : BaseApiController
     {
         IUserService _userService = null;
         public UserController(IUserService userService) {
@@ -21,14 +21,13 @@ namespace IgpFramework.Api.Controllers
         [Route("api/test")]
         public IActionResult test()
         {
-            _userService.SaveUser(new Dto.Common.Users.UserDto()
+            _userService.SaveUser(
+            new Dto.Common.Users.UserDto()
             {
                 Name = "Güleser",
                 Surname = "Pardal",
                 UserName = "Gules",
-                Password = "123456",
-                RecordUserId = 1,
-                RecordDate = DateTime.Now
+                Password = "123456"
             });
 
             return Ok("ok");

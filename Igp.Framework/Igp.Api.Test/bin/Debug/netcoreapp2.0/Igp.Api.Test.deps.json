@@ -26,7 +26,7 @@
         "dependencies": {
           "AutoMapper": "8.1.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.1",
-          "IgpFramework.Api": "1.0.0",
+          "Igp.Api.Base": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.8",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "2.2.0",
           "Microsoft.AspNetCore.Cors": "2.2.0",
@@ -4864,11 +4864,30 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "Igp.Api.Base/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "8.1.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.1",
+          "Igp.Business.Common": "1.0.0",
+          "Igp.Dto.Common": "1.0.0",
+          "Microsoft.AspNetCore.All": "2.0.8",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.2.0",
+          "Microsoft.AspNetCore.Cors": "2.2.0",
+          "Microsoft.IdentityModel.Tokens": "5.5.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.4"
+        },
+        "runtime": {
+          "Igp.Api.Base.dll": {}
+        },
+        "compile": {
+          "Igp.Api.Base.dll": {}
+        }
+      },
       "Igp.Business.Common/1.0.0": {
         "dependencies": {
           "Igp.Core": "1.0.0",
+          "Igp.Data.Common": "1.0.0",
           "Igp.Dto.Common": "1.0.0",
-          "IgpFramework.Data": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.2.6"
         },
         "runtime": {
@@ -4891,44 +4910,24 @@
           "Igp.Core.dll": {}
         }
       },
+      "Igp.Data.Common/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "2.2.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6"
+        },
+        "runtime": {
+          "Igp.Data.Common.dll": {}
+        },
+        "compile": {
+          "Igp.Data.Common.dll": {}
+        }
+      },
       "Igp.Dto.Common/1.0.0": {
         "runtime": {
           "Igp.Dto.Common.dll": {}
         },
         "compile": {
           "Igp.Dto.Common.dll": {}
-        }
-      },
-      "IgpFramework.Api/1.0.0": {
-        "dependencies": {
-          "AutoMapper": "8.1.1",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.1",
-          "Igp.Business.Common": "1.0.0",
-          "Igp.Dto.Common": "1.0.0",
-          "IgpFramework.Data": "1.0.0",
-          "Microsoft.AspNetCore.All": "2.0.8",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.2.0",
-          "Microsoft.AspNetCore.Cors": "2.2.0",
-          "Microsoft.IdentityModel.Tokens": "5.5.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.4"
-        },
-        "runtime": {
-          "IgpFramework.Api.dll": {}
-        },
-        "compile": {
-          "IgpFramework.Api.dll": {}
-        }
-      },
-      "IgpFramework.Data/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "2.2.6",
-          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6"
-        },
-        "runtime": {
-          "IgpFramework.Data.dll": {}
-        },
-        "compile": {
-          "IgpFramework.Data.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.0.0": {
@@ -7332,6 +7331,11 @@
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
+    "Igp.Api.Base/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Igp.Business.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -7342,17 +7346,12 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Igp.Data.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Igp.Dto.Common/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "IgpFramework.Api/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "IgpFramework.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

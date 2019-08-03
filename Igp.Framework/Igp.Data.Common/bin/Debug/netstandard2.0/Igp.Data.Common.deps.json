@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "IgpFramework.Data/1.0.0": {
+      "Igp.Data.Common/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "2.2.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6",
@@ -15,7 +15,7 @@
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
-          "IgpFramework.Data.dll": {}
+          "Igp.Data.Common.dll": {}
         }
       },
       "Microsoft.CSharp/4.5.0": {
@@ -620,7 +620,7 @@
     }
   },
   "libraries": {
-    "IgpFramework.Data/1.0.0": {
+    "Igp.Data.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

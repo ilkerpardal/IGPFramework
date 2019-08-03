@@ -23,9 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\IgpFramework.Data\IgpFramework.Data\Igp.Data.Common.csproj" />
     <ProjectReference Include="..\Igp.Business.Common\Igp.Business.Common.csproj" />
-    <ProjectReference Include="..\IgpFramework.Dto.Common\Igp.Dto.Common.csproj" />
+    <ProjectReference Include="..\Igp.Dto.Common\Igp.Dto.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>

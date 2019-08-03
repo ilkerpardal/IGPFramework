@@ -3221,7 +3221,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Projects\\vs\\Igp.Framework\\Igp.Data.Common\\Igp.Data.Common.csproj",
-      "projectName": "IgpFramework.Data",
+      "projectName": "Igp.Data.Common",
       "projectPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Data.Common\\Igp.Data.Common.csproj",
       "packagesPath": "C:\\Users\\casper\\.nuget\\packages\\",
       "outputPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Data.Common\\obj\\",

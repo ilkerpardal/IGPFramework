@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using IgpFramework.Api.Model;
-using IgpFramework.Data;
 using IgpFramework.Dto.Common.Users;
 using Microsoft.Extensions.Options;
 using Igp.Business.Common.BusinessLayers;
@@ -11,7 +10,6 @@ namespace IgpFramework.Api.Security.Services
 {
     public class UserService : IUserService
     {
-        private readonly IGPCoreContext _context;
         private readonly TokenManagement _tokenManagement;
         private readonly IConfiguration _configuration;
 

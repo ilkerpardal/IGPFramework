@@ -14,3 +14,4 @@ C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Com
 C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.AssemblyInfo.cs
 C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.dll
 C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.pdb
+C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.csprojAssemblyReference.cache

@@ -757,6 +757,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "Igp.Dto.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Igp.Dto.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Igp.Dto.Common.dll": {}
+        }
       }
     }
   },
@@ -3535,12 +3545,17 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "Igp.Dto.Common/1.0.0": {
+      "type": "project",
+      "path": "../Igp.Dto.Common/Igp.Dto.Common.csproj",
+      "msbuildProject": "../Igp.Dto.Common/Igp.Dto.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "AutoMapper >= 8.1.1",
-      "C:\\Projects\\vs\\Igp.Framework\\IgpFramework.Dto.Common\\Igp.Dto.Common.csproj",
+      "Igp.Dto.Common >= 1.0.0",
       "Microsoft.IdentityModel.Tokens >= 5.5.0",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -3575,8 +3590,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Projects\\vs\\Igp.Framework\\IgpFramework.Dto.Common\\Igp.Dto.Common.csproj": {
-              "projectPath": "C:\\Projects\\vs\\Igp.Framework\\IgpFramework.Dto.Common\\Igp.Dto.Common.csproj"
+            "C:\\Projects\\vs\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj": {
+              "projectPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj"
             }
           }
         }
@@ -3612,16 +3627,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Projects\\vs\\Igp.Framework\\IgpFramework.Dto.Common\\Igp.Dto.Common.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Projects\\vs\\Igp.Framework\\IgpFramework.Dto.Common\\Igp.Dto.Common.csproj",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

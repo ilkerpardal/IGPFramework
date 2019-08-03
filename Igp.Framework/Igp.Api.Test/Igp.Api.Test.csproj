@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IgpFramework.Api\IgpFramework.Api.csproj" />
+    <ProjectReference Include="..\Igp.Api.Base\Igp.Api.Base.csproj" />
   </ItemGroup>
 
 </Project>

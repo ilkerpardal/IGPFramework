@@ -10,8 +10,8 @@
       "Igp.Business.Common/1.0.0": {
         "dependencies": {
           "Igp.Core": "1.0.0",
+          "Igp.Data.Common": "1.0.0",
           "Igp.Dto.Common": "1.0.0",
-          "IgpFramework.Data": "1.0.0",
           "Microsoft.EntityFrameworkCore": "2.2.6",
           "NETStandard.Library": "2.0.3",
           "System.IdentityModel.Tokens.Jwt": "5.3.0.0"
@@ -1009,18 +1009,18 @@
           "Igp.Core.dll": {}
         }
       },
-      "Igp.Dto.Common/1.0.0": {
-        "runtime": {
-          "Igp.Dto.Common.dll": {}
-        }
-      },
-      "IgpFramework.Data/1.0.0": {
+      "Igp.Data.Common/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "2.2.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.6"
         },
         "runtime": {
-          "IgpFramework.Data.dll": {}
+          "Igp.Data.Common.dll": {}
+        }
+      },
+      "Igp.Dto.Common/1.0.0": {
+        "runtime": {
+          "Igp.Dto.Common.dll": {}
         }
       },
       "System.IdentityModel.Tokens.Jwt/5.3.0.0": {
@@ -1646,12 +1646,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Igp.Dto.Common/1.0.0": {
+    "Igp.Data.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "IgpFramework.Data/1.0.0": {
+    "Igp.Dto.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

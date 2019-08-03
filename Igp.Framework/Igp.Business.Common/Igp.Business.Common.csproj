@@ -9,9 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\IgpFramework.Data\IgpFramework.Data\Igp.Data.Common.csproj" />
     <ProjectReference Include="..\Igp.Core\Igp.Core.csproj" />
-    <ProjectReference Include="..\IgpFramework.Dto.Common\Igp.Dto.Common.csproj" />
+    <ProjectReference Include="..\Igp.Data.Common\Igp.Data.Common.csproj" />
+    <ProjectReference Include="..\Igp.Dto.Common\Igp.Dto.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿using IgpFramework.Data.Model.Users;
+﻿using IgpFramework.Data.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;

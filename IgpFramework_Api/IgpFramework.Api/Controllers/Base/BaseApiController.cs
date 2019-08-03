@@ -1,5 +1,5 @@
 ﻿
-using IgpFramework.Data.Model.Users;
+using IgpFramework.Data.Users;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace IgpFramework.Api.Controllers.Base
         {
             return new User()
             {
-                UserName = HttpContext.User.FindFirst("userName").Value,
+                KullaniciAdi = HttpContext.User.FindFirst("userName").Value,
                 Id = Convert.ToInt32(HttpContext.User.FindFirst("userId").Value)
             };
         }

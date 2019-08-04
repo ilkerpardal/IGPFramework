@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Igp.Api.Base\Igp.Api.Base.csproj" />
+    <ProjectReference Include="..\Igp.Security\Igp.Security.csproj" />
   </ItemGroup>
 
 </Project>

@@ -10,6 +10,7 @@
       "Igp.Security/1.0.0": {
         "dependencies": {
           "Igp.Dto.Common": "1.0.0",
+          "Igp.Enums.Common": "1.0.0",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
@@ -25,6 +26,11 @@
       "Igp.Dto.Common/1.0.0": {
         "runtime": {
           "Igp.Dto.Common.dll": {}
+        }
+      },
+      "Igp.Enums.Common/1.0.0": {
+        "runtime": {
+          "Igp.Enums.Common.dll": {}
         }
       }
     }
@@ -50,6 +56,11 @@
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
     "Igp.Dto.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Igp.Enums.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

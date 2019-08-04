@@ -795,11 +795,22 @@
           "bin/placeholder/Igp.Dto.Common.dll": {}
         }
       },
+      "Igp.Enums.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Igp.Enums.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Igp.Enums.Common.dll": {}
+        }
+      },
       "Igp.Security/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Igp.Dto.Common": "1.0.0"
+          "Igp.Dto.Common": "1.0.0",
+          "Igp.Enums.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Igp.Security.dll": {}
@@ -3622,6 +3633,11 @@
       "type": "project",
       "path": "../Igp.Dto.Common/Igp.Dto.Common.csproj",
       "msbuildProject": "../Igp.Dto.Common/Igp.Dto.Common.csproj"
+    },
+    "Igp.Enums.Common/1.0.0": {
+      "type": "project",
+      "path": "../Igp.Enums.Common/Igp.Enums.Common.csproj",
+      "msbuildProject": "../Igp.Enums.Common/Igp.Enums.Common.csproj"
     },
     "Igp.Security/1.0.0": {
       "type": "project",

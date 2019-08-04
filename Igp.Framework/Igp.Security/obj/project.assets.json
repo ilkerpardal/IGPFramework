@@ -35,6 +35,16 @@
         "runtime": {
           "bin/placeholder/Igp.Dto.Common.dll": {}
         }
+      },
+      "Igp.Enums.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Igp.Enums.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Igp.Enums.Common.dll": {}
+        }
       }
     }
   },
@@ -186,32 +196,38 @@
       "type": "project",
       "path": "../Igp.Dto.Common/Igp.Dto.Common.csproj",
       "msbuildProject": "../Igp.Dto.Common/Igp.Dto.Common.csproj"
+    },
+    "Igp.Enums.Common/1.0.0": {
+      "type": "project",
+      "path": "../Igp.Enums.Common/Igp.Enums.Common.csproj",
+      "msbuildProject": "../Igp.Enums.Common/Igp.Enums.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "Igp.Dto.Common >= 1.0.0",
+      "Igp.Enums.Common >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\casper\\.nuget\\packages\\": {},
+    "C:\\Users\\ILKER-PC\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\vs\\Igp.Framework\\Igp.Security\\Igp.Security.csproj",
+      "projectUniqueName": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Security\\Igp.Security.csproj",
       "projectName": "Igp.Security",
-      "projectPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Security\\Igp.Security.csproj",
-      "packagesPath": "C:\\Users\\casper\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Security\\obj\\",
+      "projectPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Security\\Igp.Security.csproj",
+      "packagesPath": "C:\\Users\\ILKER-PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Security\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\casper\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ILKER-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -224,8 +240,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Projects\\vs\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj": {
-              "projectPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj"
+            "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj": {
+              "projectPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj"
+            },
+            "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Enums.Common\\Igp.Enums.Common.csproj": {
+              "projectPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Enums.Common\\Igp.Enums.Common.csproj"
             }
           }
         }

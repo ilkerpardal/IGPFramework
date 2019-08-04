@@ -10,3 +10,17 @@ C:\Projects\vs\Igp.Framework\Igp.Security\obj\Debug\netstandard2.0\Igp.Security.
 C:\Projects\vs\Igp.Framework\Igp.Security\obj\Debug\netstandard2.0\Igp.Security.csproj.CopyComplete
 C:\Projects\vs\Igp.Framework\Igp.Security\obj\Debug\netstandard2.0\Igp.Security.dll
 C:\Projects\vs\Igp.Framework\Igp.Security\obj\Debug\netstandard2.0\Igp.Security.pdb
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\bin\Debug\netstandard2.0\Igp.Security.deps.json
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\bin\Debug\netstandard2.0\Igp.Security.dll
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\bin\Debug\netstandard2.0\Igp.Security.pdb
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\bin\Debug\netstandard2.0\Igp.Dto.Common.dll
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\bin\Debug\netstandard2.0\Igp.Dto.Common.pdb
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\obj\Debug\netstandard2.0\Igp.Security.csprojAssemblyReference.cache
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\obj\Debug\netstandard2.0\Igp.Security.csproj.CoreCompileInputs.cache
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\obj\Debug\netstandard2.0\Igp.Security.AssemblyInfoInputs.cache
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\obj\Debug\netstandard2.0\Igp.Security.AssemblyInfo.cs
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\obj\Debug\netstandard2.0\Igp.Security.csproj.CopyComplete
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\obj\Debug\netstandard2.0\Igp.Security.dll
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\obj\Debug\netstandard2.0\Igp.Security.pdb
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\bin\Debug\netstandard2.0\Igp.Enums.Common.dll
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\bin\Debug\netstandard2.0\Igp.Enums.Common.pdb

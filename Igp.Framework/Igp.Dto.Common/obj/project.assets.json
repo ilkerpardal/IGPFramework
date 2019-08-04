@@ -179,23 +179,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\casper\\.nuget\\packages\\": {},
+    "C:\\Users\\ILKER-PC\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\vs\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj",
+      "projectUniqueName": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj",
       "projectName": "Igp.Dto.Common",
-      "projectPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj",
-      "packagesPath": "C:\\Users\\casper\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Dto.Common\\obj\\",
+      "projectPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj",
+      "packagesPath": "C:\\Users\\ILKER-PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Dto.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\casper\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ILKER-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Igp.Security;
+using IgpFramework.Enums.Common;
 
 namespace IgpFramework.Api.Controllers
 {

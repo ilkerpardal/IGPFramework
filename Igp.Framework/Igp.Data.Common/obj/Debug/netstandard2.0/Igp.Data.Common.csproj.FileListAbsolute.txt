@@ -20,3 +20,13 @@ C:\Projects\vs\Igp.Framework\Igp.Data.Common\bin\Debug\netstandard2.0\Igp.Data.C
 C:\Projects\vs\Igp.Framework\Igp.Data.Common\obj\Debug\netstandard2.0\Igp.Data.Common.dll
 C:\Projects\vs\Igp.Framework\Igp.Data.Common\obj\Debug\netstandard2.0\Igp.Data.Common.pdb
 C:\Projects\vs\Igp.Framework\Igp.Data.Common\obj\Debug\netstandard2.0\Igp.Data.Common.csprojAssemblyReference.cache
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Data.Common\bin\Debug\netstandard2.0\Igp.Data.Common.deps.json
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Data.Common\bin\Debug\netstandard2.0\Igp.Data.Common.runtimeconfig.json
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Data.Common\bin\Debug\netstandard2.0\Igp.Data.Common.runtimeconfig.dev.json
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Data.Common\bin\Debug\netstandard2.0\Igp.Data.Common.dll
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Data.Common\bin\Debug\netstandard2.0\Igp.Data.Common.pdb
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Data.Common\obj\Debug\netstandard2.0\Igp.Data.Common.csproj.CoreCompileInputs.cache
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Data.Common\obj\Debug\netstandard2.0\Igp.Data.Common.AssemblyInfoInputs.cache
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Data.Common\obj\Debug\netstandard2.0\Igp.Data.Common.AssemblyInfo.cs
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Data.Common\obj\Debug\netstandard2.0\Igp.Data.Common.dll
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Data.Common\obj\Debug\netstandard2.0\Igp.Data.Common.pdb

@@ -15,3 +15,11 @@ C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Com
 C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.dll
 C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.pdb
 C:\Projects\vs\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.csprojAssemblyReference.cache
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Dto.Common\bin\Debug\netstandard2.0\Igp.Dto.Common.deps.json
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Dto.Common\bin\Debug\netstandard2.0\Igp.Dto.Common.dll
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Dto.Common\bin\Debug\netstandard2.0\Igp.Dto.Common.pdb
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.csproj.CoreCompileInputs.cache
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.AssemblyInfoInputs.cache
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.AssemblyInfo.cs
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.dll
+C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Dto.Common\obj\Debug\netstandard2.0\Igp.Dto.Common.pdb

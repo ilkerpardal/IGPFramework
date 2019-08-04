@@ -1,23 +1,24 @@
 ﻿
+using Igp.Security;
 using IgpFramework.Api.Controllers.Base;
 using IgpFramework.Api.Security.Services;
+using IgpFramework.Enums.Common;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
 
 namespace IgpFramework.Api.Controllers
 {
     [Produces("application/json")]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-    public class UserController : BaseApiController
+    public class TestController : BaseApiController
     {
         IUserService _userService = null;
-        public UserController(IUserService userService) {
+        public TestController(IUserService userService) {
             _userService = userService;
         }
 
+        [AuthorizationIGP( AuthorizationTypes.Modify | AuthorizationTypes.Read)]
         [Route("api/test")]
         public IActionResult test()
         {

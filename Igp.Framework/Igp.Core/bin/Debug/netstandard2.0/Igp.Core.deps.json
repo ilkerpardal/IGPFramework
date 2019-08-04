@@ -663,9 +663,15 @@
           "Igp.Dto.Common.dll": {}
         }
       },
+      "Igp.Enums.Common/1.0.0": {
+        "runtime": {
+          "Igp.Enums.Common.dll": {}
+        }
+      },
       "Igp.Security/1.0.0": {
         "dependencies": {
-          "Igp.Dto.Common": "1.0.0"
+          "Igp.Dto.Common": "1.0.0",
+          "Igp.Enums.Common": "1.0.0"
         },
         "runtime": {
           "Igp.Security.dll": {}
@@ -1044,6 +1050,11 @@
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
     },
     "Igp.Dto.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Igp.Enums.Common/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,49 +1,64 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using IgpFramework.Data;
-using Microsoft.EntityFrameworkCore;
-using IgpFramework.Data.Model.Users;
+using IgpFramework.Dto.Common.Users;
+using Microsoft.Extensions.Configuration;
+using Igp.Business.Common.BusinessLayers;
 
 namespace Igp.Business.Common.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        private IGPCoreContext _context;
+        IConfiguration _configuration;
 
-        public UserRepository(IGPCoreContext context)
+        public UserRepository(IConfiguration configuration)
         {
-            _context = context;
+            _configuration = configuration;
         }
 
-        public async Task AddUserAsync(User user)
+        public async Task<UserDto> VerifyUser(string userName, string password)
         {
-            await _context.User.AddAsync(user);
+            using (UserBL userBl = new UserBL(_configuration))
+            {
+                return await userBl.VerifyUser(userName, password);
+            }
         }
 
-        public  Task<List<User>> ListUserAsync()
+        public void Dispose()
         {
-            return  _context.User.ToListAsync();
+
         }
 
-        public async Task RemoveUserAsync(int userId)
-        {
-            var user = await _context.User.FindAsync(userId);
-            _context.User.Remove(user);
-        }
 
-        public void UpdateUserAsync(User user)
-        {
-            _context.User.Update(user);
-        }
+        //public async Task AddUserAsync(User user)
+        //{
+        //    await _context.User.AddAsync(user);
+        //}
 
-        public  Task<User> FindUserAsync(int userId)
-        {
-           return _context.User.FindAsync(userId);
-        }
+        //public  Task<List<User>> ListUserAsync()
+        //{
+        //    return  _context.User.ToListAsync();
+        //}
 
-        public Task<User> FindUserByUserNameAsync(string userName)
-        {
-            return _context.User.FirstOrDefaultAsync(x => x.UserName == userName);
-        }
+        //public async Task RemoveUserAsync(int userId)
+        //{
+        //    var user = await _context.User.FindAsync(userId);
+        //    _context.User.Remove(user);
+        //}
+
+        //public void UpdateUserAsync(User user)
+        //{
+        //    _context.User.Update(user);
+        //}
+
+        //public  Task<User> FindUserAsync(int userId)
+        //{
+        //   return _context.User.FindAsync(userId);
+        //}
+
+        //public Task<User> FindUserByUserNameAsync(string userName)
+        //{
+        //    return _context.User.FirstOrDefaultAsync(x => x.UserName == userName);
+        //}
     }
 }

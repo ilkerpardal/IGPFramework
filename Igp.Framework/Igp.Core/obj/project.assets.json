@@ -823,10 +823,11 @@
   },
   "libraries": {
     "AutoMapper/8.1.1": {
-      "sha512": "nVzVE1e9EoNFozDVP6RsY26RXbk4cuZJdG/SFB896tumt3b9ljMo3ar2HsgPKE+Pb2ywlVp1y74Bidb+tB9RUA==",
+      "sha512": "GKBliBukkLG0z/U0T4Jy+yEpr5bKDImQ9nEy/T8jqNulwNkWDjiEWa9TL4yCxIhleDbmVmw2xYSaJ3Eb2OcSUg==",
       "type": "package",
       "path": "automapper/8.1.1",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "automapper.8.1.1.nupkg.sha512",
         "automapper.nuspec",
@@ -839,10 +840,11 @@
       ]
     },
     "Microsoft.CSharp/4.5.0": {
-      "sha512": "EGoBmf3Na2ppbhPePDE9PlX81r1HuOZH5twBrq7couJZiPTjUnD3648balerQJO6EJ8Sj+43+XuRwQ7r+3tE3w==",
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
       "path": "microsoft.csharp/4.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -906,10 +908,11 @@
       ]
     },
     "Microsoft.IdentityModel.JsonWebTokens/5.5.0": {
-      "sha512": "KGolSaf7JnBpAiXB3Ly7z5QNxG8HelKLWYthYayjdYbSFGBs08RTXXwZftrvZfhFozXjIyb4X/599r8UoQ7BVg==",
+      "sha512": "cT9SCW/dN+ulrvAtbh37c36DR6aArENH3S4UtFmvXRx+VGC0ArDgzRaEbEh+ChS4koxdl2oS691250iZhgKvwg==",
       "type": "package",
       "path": "microsoft.identitymodel.jsonwebtokens/5.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/Microsoft.IdentityModel.JsonWebTokens.dll",
         "lib/net45/Microsoft.IdentityModel.JsonWebTokens.xml",
@@ -926,10 +929,11 @@
       ]
     },
     "Microsoft.IdentityModel.Logging/5.5.0": {
-      "sha512": "0dkS2v216kNockvZPtCEJ5iMwuDo7IyO6xedntjanTTBu87H53nh5NU3jlxkWhwtEABH0yATz1yMgu1QBFGg0Q==",
+      "sha512": "1w/Hz/7+al+ugQn+6y0tAPmpN8U0u1aBtl1QXYCVkiJfbCC4tgyroFOuhdztOq48rgeM+3JW9bGqOtkfVurW8w==",
       "type": "package",
       "path": "microsoft.identitymodel.logging/5.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/Microsoft.IdentityModel.Logging.dll",
         "lib/net45/Microsoft.IdentityModel.Logging.xml",
@@ -946,10 +950,11 @@
       ]
     },
     "Microsoft.IdentityModel.Tokens/5.5.0": {
-      "sha512": "QIOkpxDKZhts/5cE+h03OZzA5XiI8xfclJ0fRSxxGCoIy9Xh6Z/VfDYhyDjrq2L5hLuMFP9txKSTzsHANYFZNw==",
+      "sha512": "cu1klZiuCwVYbXHs0QdnseuoRGG1/85VX9d1Sk0vbJlKp+HJUN/4pAS/fe2m9bTOYyIPdeCHeksMiVHgo1EfAA==",
       "type": "package",
       "path": "microsoft.identitymodel.tokens/5.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/Microsoft.IdentityModel.Tokens.dll",
         "lib/net45/Microsoft.IdentityModel.Tokens.xml",
@@ -1351,10 +1356,11 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
+      "sha512": "KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -1388,10 +1394,11 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
+      "sha512": "HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -1739,10 +1746,11 @@
       ]
     },
     "System.IdentityModel.Tokens.Jwt/5.5.0": {
-      "sha512": "0qmIRXlIUe3f+WFV3O0FtlG6iappg7lz72P7FulaS1XGtkmsseD6zKJEwMb7esTcm4cSEwGpvuo+wPb10yucWw==",
+      "sha512": "xa8kptJ+uf9hzj366f3pLcs5HFZ6dQMDKzEGq/yZNF0s3mVfyIhuQwgDcTJlAU4AROne/6Z5+vITwrW3gVNKIA==",
       "type": "package",
       "path": "system.identitymodel.tokens.jwt/5.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/System.IdentityModel.Tokens.Jwt.dll",
         "lib/net45/System.IdentityModel.Tokens.Jwt.xml",
@@ -3020,10 +3028,11 @@
       ]
     },
     "System.Security.Cryptography.Cng/4.5.0": {
-      "sha512": "O4tqXxWCD8y1IU1VTgzbuBFwoRahrADhDUxHjwezhHCsqyFNyQ5EytjWBxu0EsZuH14b4UO2pFkG063K2h/9Ug==",
+      "sha512": "WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
       "type": "package",
       "path": "system.security.cryptography.cng/4.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -3656,23 +3665,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ILKER-PC\\.nuget\\packages\\": {},
+    "C:\\Users\\casper\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Core\\Igp.Core.csproj",
+      "projectUniqueName": "C:\\Projects\\vs\\Igp.Framework\\Igp.Core\\Igp.Core.csproj",
       "projectName": "Igp.Core",
-      "projectPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Core\\Igp.Core.csproj",
-      "packagesPath": "C:\\Users\\ILKER-PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Core\\obj\\",
+      "projectPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Core\\Igp.Core.csproj",
+      "packagesPath": "C:\\Users\\casper\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ILKER-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\casper\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3685,11 +3694,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj": {
-              "projectPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj"
+            "C:\\Projects\\vs\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj": {
+              "projectPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj"
             },
-            "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Security\\Igp.Security.csproj": {
-              "projectPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Security\\Igp.Security.csproj"
+            "C:\\Projects\\vs\\Igp.Framework\\Igp.Security\\Igp.Security.csproj": {
+              "projectPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Security\\Igp.Security.csproj"
             }
           }
         }

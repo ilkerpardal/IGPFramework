@@ -1,4 +1,5 @@
-﻿using IgpFramework.Enums.Common;
+﻿using Igp.Api.Base.Common;
+using IgpFramework.Enums.Common;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System;
@@ -17,13 +18,14 @@ namespace Igp.Security
         }
         public void OnAuthorization(AuthorizationFilterContext context)
         {
-         var test =   Igp.Core.Helpers.UserHelper.UserIdentity;
-            
-            context.Result = new JsonResult("")
-            {
-                Value = new { Status = "Yetki yok" },
-                StatusCode = (int)HttpStatusCode.Unauthorized 
-            };
+
+            var test = BaseApiCommon.UserIdentity(context.HttpContext.User);
+
+            //context.Result = new JsonResult("")
+            //{
+            //    Value = new { Status = "Yetki yok" },
+            //    StatusCode = (int)HttpStatusCode.Unauthorized 
+            //};
         }
     }
 }

@@ -8,6 +8,7 @@ using Igp.Core.Helpers;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Threading;
 using Igp.Security;
+using Igp.Api.Base.Common;
 
 namespace IgpFramework.Api.Controllers.Base
 {
@@ -17,16 +18,8 @@ namespace IgpFramework.Api.Controllers.Base
         {
             get
             {
-                return GetUserInfo();
+                return BaseApiCommon.UserIdentity(HttpContext.User);
             }
-        }
-
-        private UserDto GetUserInfo()
-        {
-            var identity = HttpContext.User.FindFirst("UserIdentity");
-            if (identity.IsAssigned())
-                return Newtonsoft.Json.JsonConvert.DeserializeObject<UserDto>(HttpContext.User.FindFirst("UserIdentity")?.Value);
-            else return new UserDto();
         }
 
         public override void OnActionExecuting(ActionExecutingContext context)

@@ -24,3 +24,5 @@ C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\obj\Debug\net
 C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\obj\Debug\netstandard2.0\Igp.Security.pdb
 C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\bin\Debug\netstandard2.0\Igp.Enums.Common.dll
 C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Security\bin\Debug\netstandard2.0\Igp.Enums.Common.pdb
+C:\Projects\vs\Igp.Framework\Igp.Security\bin\Debug\netstandard2.0\Igp.Enums.Common.dll
+C:\Projects\vs\Igp.Framework\Igp.Security\bin\Debug\netstandard2.0\Igp.Enums.Common.pdb

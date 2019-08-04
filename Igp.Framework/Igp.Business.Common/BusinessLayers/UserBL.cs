@@ -12,25 +12,23 @@ using Unit = Igp.Business.Common.UnitOfWork;
 
 namespace Igp.Business.Common.BusinessLayers
 {
-    public class UserBL :IDisposable
+    internal class UserBL :IDisposable
     {
         ICrypto _crypto = null;
-        IUserRepository _userRepository = null;
         Unit.IUnitOfWork _unitofWork = null;
         IGPCoreContext _context;
 
-        public UserBL(IConfiguration configuration)
+        internal UserBL(IConfiguration configuration)
         {
             _crypto = new Crypto();
             _context = new IGPCoreContext(new DbContextOptions<IGPCoreContext>(), configuration);
-            _userRepository = new UserRepository(_context);
             _unitofWork = new Unit.UnitOfWork(_context);
         }
 
-        public async Task<UserDto> VerifyUser(string userName, string password)
+        internal async Task<UserDto> VerifyUser(string userName, string password)
         {
             var passwordHash = _crypto.Md5Hashing(password);
-            User user = await _userRepository.FindUserByUserNameAsync(userName);
+            User user = await _context.User.FirstOrDefaultAsync(x => x.UserName == userName);
 
             if (user.IsAssigned())
             {
@@ -50,36 +48,36 @@ namespace Igp.Business.Common.BusinessLayers
             }
         }
 
-        public void GetUser() { }
+        //public void GetUser() { }
 
-        public async void SaveUser(UserDto user)
-        {
-            User _user = user.Map<User>();
-            _user.Password = _crypto.Md5Hashing(user.Password);
-            if (_user.Id == 0)
-            {
-                _user.RecordUserId = UserHelper.UserIdentity.Id;
-                _user.RecordDate = DateTime.Now;
-            }
-            else {
-                _user.UpdateUserId= UserHelper.UserIdentity.Id;
-                _user.UpdateDate = DateTime.Now;
-            }
+        //public async void SaveUser(UserDto user)
+        //{
+        //    User _user = user.Map<User>();
+        //    _user.Password = _crypto.Md5Hashing(user.Password);
+        //    if (_user.Id == 0)
+        //    {
+        //        _user.RecordUserId = UserHelper.UserIdentity.Id;
+        //        _user.RecordDate = DateTime.Now;
+        //    }
+        //    else {
+        //        _user.UpdateUserId= UserHelper.UserIdentity.Id;
+        //        _user.UpdateDate = DateTime.Now;
+        //    }
 
-            await _userRepository.AddUserAsync(_user);
-        }
+        //    await _userRepository.AddUserAsync(_user);
+        //}
 
-        public async void DeleteUser(int userId)
-        {
-            await _userRepository.RemoveUserAsync(userId);
-        }
+        //public async void DeleteUser(int userId)
+        //{
+        //    await _userRepository.RemoveUserAsync(userId);
+        //}
 
-        public async void CompleteAsync()
+        internal async void CompleteAsync()
         {
             await _unitofWork.CompleteAsync();
         }
 
-        public void Dispose()
+        void IDisposable.Dispose()
         {
         }
     }

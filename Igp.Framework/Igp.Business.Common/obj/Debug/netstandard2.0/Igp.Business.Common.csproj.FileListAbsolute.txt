@@ -27,12 +27,9 @@ C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\Igp.Bu
 C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\Igp.Core.dll
 C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\Igp.Data.Common.dll
 C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\Igp.Dto.Common.dll
-C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\Igp.Core.pdb
 C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\Igp.Data.Common.pdb
 C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\Igp.Dto.Common.pdb
-C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\System.IdentityModel.Tokens.Jwt.pdb
-C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\System.IdentityModel.Tokens.Jwt.xml
 C:\Projects\vs\Igp.Framework\Igp.Business.Common\obj\Debug\netstandard2.0\Igp.Business.Common.csproj.CopyComplete
 C:\Projects\vs\Igp.Framework\Igp.Business.Common\obj\Debug\netstandard2.0\Igp.Business.Common.dll
 C:\Projects\vs\Igp.Framework\Igp.Business.Common\obj\Debug\netstandard2.0\Igp.Business.Common.pdb
@@ -58,3 +55,5 @@ C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Business.Common\obj\De
 C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Business.Common\obj\Debug\netstandard2.0\Igp.Business.Common.pdb
 C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\Igp.Enums.Common.dll
 C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\Igp.Enums.Common.pdb
+C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\Igp.Enums.Common.dll
+C:\Projects\vs\Igp.Framework\Igp.Business.Common\bin\Debug\netstandard2.0\Igp.Enums.Common.pdb

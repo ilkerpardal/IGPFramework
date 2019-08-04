@@ -9,6 +9,7 @@ using Igp.Core.Security.Token;
 using System.Threading;
 using System;
 using Igp.Core.Helpers;
+using Igp.Business.Common.Repositories;
 
 namespace IgpFramework.Api.Security.Services
 {
@@ -27,9 +28,9 @@ namespace IgpFramework.Api.Security.Services
         {
             try
             {
-                using (UserBL userBl = new UserBL(_configuration))
+                using (IUserRepository userRepo = new UserRepository(_configuration))
                 {
-                    var user = await userBl.VerifyUser(userName, password);
+                    var user = await userRepo.VerifyUser(userName, password);
                     if (user.IsAssigned())
                         user.Token = TokenHelper.GetToken(user);
                     return user;
@@ -42,10 +43,10 @@ namespace IgpFramework.Api.Security.Services
 
         public void SaveUser(UserDto user)
         {
-            using (UserBL userBl = new UserBL(_configuration))
+            using (IUserRepository userRepo = new UserRepository(_configuration))
             {
-                userBl.SaveUser(user);
-                userBl.CompleteAsync();
+                //userRepo.SaveUser(user);
+                //userRepo.CompleteAsync();
             }
         }
 

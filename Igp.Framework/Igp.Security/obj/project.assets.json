@@ -211,23 +211,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ILKER-PC\\.nuget\\packages\\": {},
+    "C:\\Users\\casper\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Security\\Igp.Security.csproj",
+      "projectUniqueName": "C:\\Projects\\vs\\Igp.Framework\\Igp.Security\\Igp.Security.csproj",
       "projectName": "Igp.Security",
-      "projectPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Security\\Igp.Security.csproj",
-      "packagesPath": "C:\\Users\\ILKER-PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Security\\obj\\",
+      "projectPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Security\\Igp.Security.csproj",
+      "packagesPath": "C:\\Users\\casper\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Security\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ILKER-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\casper\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -240,11 +240,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj": {
-              "projectPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj"
+            "C:\\Projects\\vs\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj": {
+              "projectPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Dto.Common\\Igp.Dto.Common.csproj"
             },
-            "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Enums.Common\\Igp.Enums.Common.csproj": {
-              "projectPath": "C:\\Users\\ILKER-PC\\Documents\\Projects\\VS\\Igp.Framework\\Igp.Enums.Common\\Igp.Enums.Common.csproj"
+            "C:\\Projects\\vs\\Igp.Framework\\Igp.Enums.Common\\Igp.Enums.Common.csproj": {
+              "projectPath": "C:\\Projects\\vs\\Igp.Framework\\Igp.Enums.Common\\Igp.Enums.Common.csproj"
             }
           }
         }

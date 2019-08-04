@@ -16,8 +16,10 @@ namespace Igp.Core.Helpers
         {
             try
             {
-                Mapper.Initialize(config => { config.CreateMap(source.GetType(), typeof(T)); });
-                return Mapper.Map<T>(source);
+                var config = new MapperConfiguration(cfg =>
+                cfg.CreateMap(source.GetType(), typeof(T)));
+                var mapper = config.CreateMapper();
+                return mapper.Map<T>(source);
             }
             catch (Exception ex)
             {

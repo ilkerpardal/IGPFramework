@@ -10,11 +10,14 @@ namespace Igp.Data.Common.Model.Menus
     public class Menu : TableBase
     {
         public int? ParentId { get; set; }
+
         [Required, Column(TypeName = "varchar(100)")]
         public string MenuName { get; set; }
+
         [Column(TypeName = "varchar(100)")]
         public string MenuUrl { get; set; }
 
         public virtual ICollection<UserMenu> UserMenuPermissions { get; set; }
+        public virtual ICollection<MenuTransaction> MenuTransactions { get; set; }
     }
 }

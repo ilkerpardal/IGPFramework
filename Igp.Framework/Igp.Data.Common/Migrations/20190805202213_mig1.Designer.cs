@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Igp.Data.Common.Migrations
 {
     [DbContext(typeof(IGPCoreContext))]
-    [Migration("20190804183618_mig1")]
+    [Migration("20190805202213_mig1")]
     partial class mig1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,7 +21,7 @@ namespace Igp.Data.Common.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("IgpFramework.Data.Model.Menus.Menu", b =>
+            modelBuilder.Entity("Igp.Data.Common.Model.Menus.Menu", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -51,7 +51,37 @@ namespace Igp.Data.Common.Migrations
                     b.ToTable("IGP_MENU");
                 });
 
-            modelBuilder.Entity("IgpFramework.Data.Model.Users.User", b =>
+            modelBuilder.Entity("Igp.Data.Common.Model.Menus.MenuTransaction", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description");
+
+                    b.Property<int>("MenuId");
+
+                    b.Property<DateTime>("RecordDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("RecordUserId");
+
+                    b.Property<string>("TransactionName")
+                        .IsRequired();
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnType("date");
+
+                    b.Property<int?>("UpdateUserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MenuId");
+
+                    b.ToTable("IGP_MENU_TRANSACTION");
+                });
+
+            modelBuilder.Entity("Igp.Data.Common.Model.Users.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -106,7 +136,7 @@ namespace Igp.Data.Common.Migrations
                     b.ToTable("IGP_USER");
                 });
 
-            modelBuilder.Entity("IgpFramework.Data.Model.Users.UserMenu", b =>
+            modelBuilder.Entity("Igp.Data.Common.Model.Users.UserMenu", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -143,7 +173,7 @@ namespace Igp.Data.Common.Migrations
                     b.ToTable("IGP_USER_MENU_PERMISSIONS");
                 });
 
-            modelBuilder.Entity("IgpFramework.Data.Model.Users.UserPassword", b =>
+            modelBuilder.Entity("Igp.Data.Common.Model.Users.UserPassword", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -172,7 +202,7 @@ namespace Igp.Data.Common.Migrations
                     b.ToTable("IGP_USER_PASSWORDS");
                 });
 
-            modelBuilder.Entity("IgpFramework.Data.Model.Users.UserSession", b =>
+            modelBuilder.Entity("Igp.Data.Common.Model.Users.UserSession", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -206,31 +236,81 @@ namespace Igp.Data.Common.Migrations
                     b.ToTable("IGP_USER_SESSIONS");
                 });
 
-            modelBuilder.Entity("IgpFramework.Data.Model.Users.UserMenu", b =>
+            modelBuilder.Entity("Igp.Data.Common.Model.Users.UserTransaction", b =>
                 {
-                    b.HasOne("IgpFramework.Data.Model.Menus.Menu", "Menu")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("RecordDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("RecordUserId");
+
+                    b.Property<int>("TransactionId");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnType("date");
+
+                    b.Property<int?>("UpdateUserId");
+
+                    b.Property<int>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TransactionId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("IGP_USER_TRANSACTION");
+                });
+
+            modelBuilder.Entity("Igp.Data.Common.Model.Menus.MenuTransaction", b =>
+                {
+                    b.HasOne("Igp.Data.Common.Model.Menus.Menu", "Menu")
+                        .WithMany("MenuTransactions")
+                        .HasForeignKey("MenuId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Igp.Data.Common.Model.Users.UserMenu", b =>
+                {
+                    b.HasOne("Igp.Data.Common.Model.Menus.Menu", "Menu")
                         .WithMany("UserMenuPermissions")
                         .HasForeignKey("MenuId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("IgpFramework.Data.Model.Users.User", "User")
+                    b.HasOne("Igp.Data.Common.Model.Users.User", "User")
                         .WithMany("UserMenuPermissions")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("IgpFramework.Data.Model.Users.UserPassword", b =>
+            modelBuilder.Entity("Igp.Data.Common.Model.Users.UserPassword", b =>
                 {
-                    b.HasOne("IgpFramework.Data.Model.Users.User", "User")
+                    b.HasOne("Igp.Data.Common.Model.Users.User", "User")
                         .WithMany("UserPasswords")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("IgpFramework.Data.Model.Users.UserSession", b =>
+            modelBuilder.Entity("Igp.Data.Common.Model.Users.UserSession", b =>
                 {
-                    b.HasOne("IgpFramework.Data.Model.Users.User", "User")
+                    b.HasOne("Igp.Data.Common.Model.Users.User", "User")
                         .WithMany("UserSessions")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Igp.Data.Common.Model.Users.UserTransaction", b =>
+                {
+                    b.HasOne("Igp.Data.Common.Model.Menus.MenuTransaction", "Transaction")
+                        .WithMany("UserTransactions")
+                        .HasForeignKey("TransactionId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Igp.Data.Common.Model.Users.User", "User")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

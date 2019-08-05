@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace IgpFramework.Data.Model.Base
+namespace Igp.Data.Common.Model.Base
 {
     public class TableBase
     {

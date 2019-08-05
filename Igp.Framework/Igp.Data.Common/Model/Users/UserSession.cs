@@ -1,12 +1,11 @@
-﻿using IgpFramework.Data.Model.Base;
-using IgpFramework.Data.Model.Users;
+﻿using Igp.Data.Common.Model.Base;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace IgpFramework.Data.Model.Users
+namespace Igp.Data.Common.Model.Users
 {
     [Table("IGP_USER_SESSIONS")]
     public class UserSession : TableBase

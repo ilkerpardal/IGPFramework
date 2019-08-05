@@ -23,3 +23,4 @@ C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Enums.Common\obj\Debug
 C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.AssemblyInfo.cs
 C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.dll
 C:\Users\ILKER-PC\Documents\Projects\VS\Igp.Framework\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.pdb
+C:\Projects\vs\Igp.Framework\Igp.Enums.Common\obj\Debug\netstandard2.0\Igp.Enums.Common.csprojAssemblyReference.cache

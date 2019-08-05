@@ -1,16 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using IgpFramework.Api.Controllers.Base;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Igp.Security;
-using IgpFramework.Enums.Common;
+using Igp.Api.Base.Controllers.Base;
 
-namespace IgpFramework.Api.Controllers
+namespace Igp.Api.Base.Controllers
 {
     [Produces("application/json")]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]

@@ -1,10 +1,7 @@
-﻿using IgpFramework.Dto.Common.Base;
-using IgpFramework.Dto.Common.Menus;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Igp.Dto.Common.Base;
+using Igp.Dto.Common.Menus;
 
-namespace IgpFramework.Dto.Common.Users
+namespace Igp.Dto.Common.Users
 {
     public class UserMenuDto : TableBaseDto
     {

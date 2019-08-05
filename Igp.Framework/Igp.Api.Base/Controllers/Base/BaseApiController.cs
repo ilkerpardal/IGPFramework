@@ -1,16 +1,12 @@
 ﻿
-using IgpFramework.Data.Model.Users;
-using IgpFramework.Dto.Common.Users;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Linq;
-using Igp.Core.Helpers;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Threading;
 using Igp.Security;
 using Igp.Api.Base.Common;
+using Igp.Dto.Common.Users;
 
-namespace IgpFramework.Api.Controllers.Base
+namespace Igp.Api.Base.Controllers.Base
 {
     public class BaseApiController : Controller
     {

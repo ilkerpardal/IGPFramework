@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace IgpFramework.Api.Model
+namespace Igp.Api.Base.Model
 {
     [JsonObject("tokenManagement")]
     public class TokenManagement

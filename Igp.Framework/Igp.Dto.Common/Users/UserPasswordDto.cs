@@ -1,9 +1,6 @@
-﻿using IgpFramework.Dto.Common.Base;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Igp.Dto.Common.Base;
 
-namespace IgpFramework.Dto.Common.Users
+namespace Igp.Dto.Common.Users
 {
     public class UserPasswordDto : TableBaseDto
     {

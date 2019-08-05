@@ -1,9 +1,7 @@
-﻿using IgpFramework.Dto.Common.Base;
+﻿using Igp.Dto.Common.Base;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace IgpFramework.Dto.Common.Users
+namespace Igp.Dto.Common.Users
 {
     public class UserSessionDto : TableBaseDto
     {

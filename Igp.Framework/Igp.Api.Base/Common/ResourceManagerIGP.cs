@@ -1,6 +1,6 @@
 ﻿
 
-namespace IgpFramework.Api.Common
+namespace Igp.Api.Base.Common
 {
     public class ResourceManagerIGP : IResourceManagerIGP
     {

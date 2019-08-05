@@ -1,14 +1,13 @@
-﻿using Igp.Business.Common.Repositories;
-using Igp.Core.Helpers;
+﻿using Igp.Core.Helpers;
 using Igp.Core.Security;
 using IgpFramework.Data;
-using IgpFramework.Data.Model.Users;
-using IgpFramework.Dto.Common.Users;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Unit = Igp.Business.Common.UnitOfWork;
+using Igp.Dto.Common.Users;
+using Igp.Data.Common.Model.Users;
 
 namespace Igp.Business.Common.BusinessLayers
 {

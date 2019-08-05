@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IgpFramework.Enums.Common
+namespace Igp.Enums.Common
 {
     public enum AuthorizationTypes
     {

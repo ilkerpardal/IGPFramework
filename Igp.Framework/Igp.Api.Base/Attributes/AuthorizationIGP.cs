@@ -1,11 +1,10 @@
 ﻿using Igp.Api.Base.Common;
-using IgpFramework.Enums.Common;
-using Microsoft.AspNetCore.Mvc;
+using Igp.Enums.Common;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System;
 using System.Net;
 
-namespace Igp.Security
+namespace Igp.Api.Base.Attributes
 {
 
     [System.AttributeUsage(AttributeTargets.All, Inherited = false, AllowMultiple = true)]

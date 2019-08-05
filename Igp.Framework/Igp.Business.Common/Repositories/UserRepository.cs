@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using IgpFramework.Data;
-using IgpFramework.Dto.Common.Users;
 using Microsoft.Extensions.Configuration;
 using Igp.Business.Common.BusinessLayers;
+using Igp.Dto.Common.Users;
 
 namespace Igp.Business.Common.Repositories
 {

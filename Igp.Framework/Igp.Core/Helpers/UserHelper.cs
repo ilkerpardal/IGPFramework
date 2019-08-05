@@ -1,4 +1,4 @@
-﻿using IgpFramework.Dto.Common.Users;
+﻿using Igp.Dto.Common.Users;
 using System;
 using System.Collections.Generic;
 using System.Text;

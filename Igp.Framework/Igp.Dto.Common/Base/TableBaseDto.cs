@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IgpFramework.Dto.Common.Base
+namespace Igp.Dto.Common.Base
 {
     public class TableBaseDto
     {

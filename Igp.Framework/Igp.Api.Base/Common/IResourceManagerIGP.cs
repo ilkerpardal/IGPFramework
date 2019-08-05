@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace IgpFramework.Api.Common
+namespace Igp.Api.Base.Common
 {
     public interface IResourceManagerIGP
     {

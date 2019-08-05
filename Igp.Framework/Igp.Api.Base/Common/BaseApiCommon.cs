@@ -1,15 +1,6 @@
-﻿
-using IgpFramework.Data.Model.Users;
-using IgpFramework.Dto.Common.Users;
-using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Linq;
-using Igp.Core.Helpers;
-using Microsoft.AspNetCore.Mvc.Filters;
-using System.Threading;
-using Igp.Security;
-using Microsoft.AspNetCore.Http;
+﻿using Igp.Core.Helpers;
 using System.Security.Claims;
+using Igp.Dto.Common.Users;
 
 namespace Igp.Api.Base.Common
 {

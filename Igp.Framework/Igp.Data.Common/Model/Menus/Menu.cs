@@ -1,12 +1,10 @@
-﻿using IgpFramework.Data.Model.Base;
-using IgpFramework.Data.Model.Users;
-using System;
+﻿using Igp.Data.Common.Model.Base;
+using Igp.Data.Common.Model.Users;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
-namespace IgpFramework.Data.Model.Menus
+namespace Igp.Data.Common.Model.Menus
 {
     [Table("IGP_MENU")]
     public class Menu : TableBase

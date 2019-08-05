@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using IgpFramework.Api.Model;
-using IgpFramework.Dto.Common.Users;
 using Microsoft.Extensions.Options;
 using Igp.Business.Common.BusinessLayers;
 using Microsoft.Extensions.Configuration;
@@ -10,8 +8,10 @@ using System.Threading;
 using System;
 using Igp.Core.Helpers;
 using Igp.Business.Common.Repositories;
+using Igp.Api.Base.Model;
+using Igp.Dto.Common.Users;
 
-namespace IgpFramework.Api.Security.Services
+namespace Igp.Api.Base.Services
 {
     public class UserService : IUserService
     {

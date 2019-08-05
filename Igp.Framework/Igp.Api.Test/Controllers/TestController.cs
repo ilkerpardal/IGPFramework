@@ -1,13 +1,13 @@
 ﻿
-using Igp.Security;
-using IgpFramework.Api.Controllers.Base;
-using IgpFramework.Api.Security.Services;
-using IgpFramework.Enums.Common;
+using Igp.Api.Base.Attributes;
+using Igp.Api.Base.Controllers.Base;
+using Igp.Api.Base.Services;
+using Igp.Enums.Common;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace IgpFramework.Api.Controllers
+namespace Igp.Api.Test.Controllers
 {
     [Produces("application/json")]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]

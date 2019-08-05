@@ -1,4 +1,4 @@
-﻿using IgpFramework.Dto.Common.Users;
+﻿using Igp.Dto.Common.Users;
 using System;
 using System.Security.Principal;
 

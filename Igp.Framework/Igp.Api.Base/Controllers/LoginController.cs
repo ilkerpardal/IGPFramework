@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Resources;
-using System.Threading.Tasks;
-using IgpFramework.Api.Common;
-using IgpFramework.Api.Controllers.Base;
+﻿using System.Threading.Tasks;
 using Igp.Core.Helpers;
-using IgpFramework.Api.Security.Services;
-using IgpFramework.Data.Model.Users;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Igp.Api.Base.Controllers.Base;
+using Igp.Api.Base.Services;
+using Igp.Api.Base.Common;
+using Igp.Dto.Common.Users;
 
-namespace IgpFramework.Api.Controllers
+namespace Igp.Api.Base.Controllers
 {
     [Authorize]
     [Route("[controller]")]
@@ -27,7 +23,7 @@ namespace IgpFramework.Api.Controllers
 
         [AllowAnonymous]
         [HttpPost]
-        public async Task<IActionResult> Authenticate([FromBody]User userParam)
+        public async Task<IActionResult> Authenticate([FromBody]UserDto userParam)
         {
             var user = await _userService.Authenticate(userParam.UserName, userParam.Password);
             if (!user.IsAssigned()) return BadRequest(new { Massage = _resourceManager.GetResourceValue("InvalidPasswordOrUsername") });

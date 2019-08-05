@@ -1,5 +1,5 @@
-﻿using Igp.Security;
-using IgpFramework.Dto.Common.Users;
+﻿using Igp.Dto.Common.Users;
+using Igp.Security;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using System;

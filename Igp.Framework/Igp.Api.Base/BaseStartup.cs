@@ -11,11 +11,11 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using IgpFramework.Api.Model;
 using AutoMapper;
-using IgpFramework.Api.Security.Services;
-using IgpFramework.Api.Common;
 using Igp.Core.Security.Token;
+using Igp.Api.Base.Model;
+using Igp.Api.Base.Services;
+using Igp.Api.Base.Common;
 
 namespace IgpFramework.Api
 {
@@ -36,7 +36,7 @@ namespace IgpFramework.Api
             services.AddMvc();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IResourceManagerIGP, ResourceManagerIGP>();
-
+            services.AddDbContext<IGPCoreContext>(options => options.UseSqlServer(Configuration.GetConnectionString("sqlConnection")));
             //dependecy injection sayesinde automapperi proje içinde kullanmamızı sağlayacak
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddCors(cors => cors.AddDefaultPolicy(defaultCors => { defaultCors.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod(); }));

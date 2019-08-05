@@ -1,8 +1,7 @@
-﻿using IgpFramework.Data.Model.Menus;
-using IgpFramework.Data.Model.Users;
+﻿using Igp.Data.Common.Model.Menus;
+using Igp.Data.Common.Model.Users;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System;
 
 namespace IgpFramework.Data
 {
@@ -22,6 +21,7 @@ namespace IgpFramework.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>().HasIndex(x => x.UserName).IsUnique(true);
         }
 
         public DbSet<User> User { get; set; }

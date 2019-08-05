@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IgpFramework.Api.Resource {
+namespace Igp.Api.Base.Resource {
     using System;
     
     

@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Igp.Data.Common", "Igp.Data
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Igp.Dto.Common", "Igp.Dto.Common\Igp.Dto.Common.csproj", "{843D486B-2948-4DBE-BCB0-F69B58C4C738}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Igp.Security", "Igp.Security\Igp.Security.csproj", "{802DE5B0-DCDE-4E88-81A1-B9CB35B41918}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Igp.Security", "Igp.Security\Igp.Security.csproj", "{802DE5B0-DCDE-4E88-81A1-B9CB35B41918}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Igp.Api.Core", "Igp.Api.Core\Igp.Api.Core.csproj", "{7B858824-0820-447D-A554-EBE615008C52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{802DE5B0-DCDE-4E88-81A1-B9CB35B41918}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{802DE5B0-DCDE-4E88-81A1-B9CB35B41918}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{802DE5B0-DCDE-4E88-81A1-B9CB35B41918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B858824-0820-447D-A554-EBE615008C52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B858824-0820-447D-A554-EBE615008C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B858824-0820-447D-A554-EBE615008C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B858824-0820-447D-A554-EBE615008C52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{234B31B4-6309-4E65-AAB9-AED5A78F389C} = {44E1F47C-2E68-4066-B670-1EF812E4D454}
 		{843D486B-2948-4DBE-BCB0-F69B58C4C738} = {CFC2AD4C-AEF4-4FBD-86E5-7E8CA483C661}
 		{802DE5B0-DCDE-4E88-81A1-B9CB35B41918} = {0C982D15-5739-4AEC-B37F-CEDD939FAF3A}
+		{7B858824-0820-447D-A554-EBE615008C52} = {E26C4883-D79B-487B-A76A-FCAEE70FAFC4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C424BCF1-3E0E-48A6-90C2-C0FC3A5AAF38}

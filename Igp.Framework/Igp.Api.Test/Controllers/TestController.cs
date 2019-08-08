@@ -1,11 +1,13 @@
-﻿
+﻿ 
 using Igp.Api.Base.Attributes;
 using Igp.Api.Base.Controllers.Base;
 using Igp.Api.Base.Services;
+using Igp.Business.Common.Repositories;
 using Igp.Enums.Common;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace Igp.Api.Test.Controllers
 {
@@ -14,8 +16,11 @@ namespace Igp.Api.Test.Controllers
     public class TestController : BaseApiController
     {
         IUserService _userService = null;
-        public TestController(IUserService userService) {
+        IConfiguration _configuration;
+
+        public TestController(IUserService userService, IConfiguration configuration) {
             _userService = userService;
+            _configuration = configuration;
         }
 
         [AuthorizationIGP( AuthorizationTypes.Modify | AuthorizationTypes.Read)]
@@ -34,6 +39,17 @@ namespace Igp.Api.Test.Controllers
             });
 
             return Ok("ok");
+        }
+
+        [AuthorizationIGP(AuthorizationTypes.Modify | AuthorizationTypes.Read)]
+        [Route("api/GetUserMenus")]
+        public IActionResult GetUserMenus()
+        {
+            using (IMenuRepository repo = new MenuRepository(_configuration))
+            {
+                var userMenus= repo.GetUserMenus(UserIdentity.Id).Result;
+                return Ok(userMenus);
+            }
         }
     }
 }

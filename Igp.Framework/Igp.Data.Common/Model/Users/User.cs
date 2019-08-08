@@ -31,6 +31,7 @@ namespace Igp.Data.Common.Model.Users
         public virtual ICollection<UserPassword> UserPasswords { get; set; }
         public virtual ICollection<UserMenu> UserMenuPermissions { get; set; }
         public virtual ICollection<UserSession> UserSessions{ get; set; }
+        public virtual ICollection<UserTransaction> UserTransactions { get; set; }
 
     }
 }

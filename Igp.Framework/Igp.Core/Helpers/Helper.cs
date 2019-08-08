@@ -12,12 +12,18 @@ namespace Igp.Core.Helpers
             return !(value == null || (value is string stringValue && String.IsNullOrEmpty(stringValue)));
         }
 
-        public static T Map<T>(this object source)
+        public static T Map<T>(this object source, Dictionary<Type,Type> types)
         {
             try
             {
                 var config = new MapperConfiguration(cfg =>
-                cfg.CreateMap(source.GetType(), typeof(T)));
+                {
+                    foreach (var item in types)
+                    {
+                        cfg.CreateMap(item.Key, item.Value);
+                    }
+                }
+                );
                 var mapper = config.CreateMapper();
                 return mapper.Map<T>(source);
             }

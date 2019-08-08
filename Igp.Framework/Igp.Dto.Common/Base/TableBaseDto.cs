@@ -6,7 +6,7 @@ using System.Text;
 namespace Igp.Dto.Common.Base
 {
     [DataContract]
-    public class TableBaseDto
+    public abstract class TableBaseDto
     {
         [DataMember]
         public int Id { get; set; }
@@ -14,5 +14,6 @@ namespace Igp.Dto.Common.Base
         public DateTime RecordDate { get; set; }
         public int? UpdateUserId { get; set; }
         public DateTime? UpdateDate { get; set; }
+
     }
 }

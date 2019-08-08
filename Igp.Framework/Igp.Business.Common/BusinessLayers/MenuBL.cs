@@ -25,22 +25,22 @@ namespace Igp.Business.Common.BusinessLayers
 
         internal List<MenuDto> GetUserMenus(int userId)
         {
-            var userMenus = _context.Menu.Include(x => x.UserMenuPermissions).Include(x=> x.MenuTransactions)
-                                         .Where(x => x.UserMenuPermissions.Any(y => y.UserId == userId))
-                                        // .Where(x=> x.MenuTransactions.Any(y=> y.UserTransactions.Any(z=>z.UserId==userId)))
-                                         .ToList();
-            
-            var dict = new Dictionary<Type, Type>();
-            dict.Add(typeof(Menu), typeof(MenuDto));
-            dict.Add(typeof(UserMenu), typeof(UserMenuDto));
-            dict.Add(typeof(MenuTransaction), typeof(MenuTransactionDto));
-
-            return userMenus.Map<List<MenuDto>>(dict);
+            var userMenus = _context.Menu.Select(x =>
+            new Menu
+            {
+                UserMenuPermissions = _context.UserMenu.Where(y => y.MenuId == x.Id && y.UserId == userId).ToList(),
+                MenuTransactions = _context.MenuTransaction.Where(y => y.MenuId == x.Id && y.UserTransactions.Any(ut => ut.UserId == userId)).ToList(),
+                Id = x.Id,
+                MenuName = x.MenuName,
+                MenuUrl = x.MenuUrl,
+                ParentId = x.ParentId
+            });
+            return userMenus.Map<List<MenuDto>>(ModelConfig.GetAllModelConfigrations());
         }
 
         void IDisposable.Dispose()
         {
-            
+
         }
     }
 }

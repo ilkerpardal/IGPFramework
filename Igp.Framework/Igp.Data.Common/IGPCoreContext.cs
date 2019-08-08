@@ -29,6 +29,9 @@ namespace IgpFramework.Data
         public DbSet<Menu> Menu { get; set; }
         public DbSet<UserMenu> UserMenu { get; set; }
         public DbSet<UserSession> UserSession { get; set; }
+        public DbSet<UserTransaction> UserTransaction { get; set; }
+        public DbSet<MenuTransaction> MenuTransaction { get; set; }
+
 
     }
 }

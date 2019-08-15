@@ -63,7 +63,6 @@ C:\Projects\vs\Igp.VSIX\Igp.Form\bin\Release\System.Numerics.Vectors.xml
 C:\Projects\vs\Igp.VSIX\Igp.Form\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
 C:\Projects\vs\Igp.VSIX\Igp.Form\bin\Release\Igp.Data.Common.pdb
 C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Release\Igp.Form.Addin.csprojAssemblyReference.cache
-C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Release\Igp.Form.Addin.AppSettings.resources
 C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Release\Igp.Form.Addin.Properties.Resources.resources
 C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Release\Igp.Form.Addin.csproj.GenerateResource.cache
 C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Release\Igp.Form.Addin.csproj.CoreCompileInputs.cache
@@ -72,3 +71,4 @@ C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Release\Igp.Form.Addin.exe
 C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Release\Igp.Form.Addin.pdb
 C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Release\Igp.Form.Addin.MainContainer.resources
 C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Release\Igp.Form.Addin.TransactionControl.resources
+C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Release\Igp.Form.Addin.AppSettingsControl.resources

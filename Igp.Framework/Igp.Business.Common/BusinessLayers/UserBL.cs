@@ -52,7 +52,7 @@ namespace Igp.Business.Common.BusinessLayers
                 }
                 else
                 {
-                    throw new Exception("Password error");//ToDo: Mesajlara taşınacak 
+                    throw new Exception("Username or password error");//ToDo: Mesajlara taşınacak 
                 }
             }
             else

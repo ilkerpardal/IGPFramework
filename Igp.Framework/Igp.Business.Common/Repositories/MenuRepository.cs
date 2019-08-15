@@ -11,10 +11,16 @@ namespace Igp.Business.Common.Repositories
     public class MenuRepository : IMenuRepository
     {
         IConfiguration _configuration;
+        string _connectionString;
 
         public MenuRepository(IConfiguration configuration)
         {
             _configuration = configuration;
+            _connectionString = configuration.GetConnectionString("sqlConnection");
+        }
+
+        public MenuRepository(string connectionString) {
+            _connectionString = connectionString;
         }
 
         public async Task<List<MenuDto>> GetUserMenus(int userId)
@@ -25,6 +31,21 @@ namespace Igp.Business.Common.Repositories
             }
         }
 
+        public async Task<List<MenuDto>> GetMenus()
+        {
+            using (MenuBL menuBL = new MenuBL(_connectionString))
+            {
+                return menuBL.GetMenus();
+            }
+        }
+
+        public async Task SaveMenuTransaction(MenuTransactionDto model)
+        {
+            using (MenuBL menuBL = new MenuBL(_connectionString))
+            {
+                await menuBL.SaveMenuTransaction(model);
+            }
+        }
 
         public void Dispose()
         {

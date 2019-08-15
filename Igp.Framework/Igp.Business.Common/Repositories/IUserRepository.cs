@@ -8,7 +8,8 @@ namespace Igp.Business.Common.Repositories
 {
     public interface IUserRepository : IDisposable
     {
-        Task<UserDto> VerifyUser(string userName, string password);
+        UserDto VerifyUser(string userName, string password);
+        Task<UserDto> VerifyUserAsync(string userName, string password);
 
         //Task<List<User>> ListUserAsync();
         //Task AddUserAsync(User user);

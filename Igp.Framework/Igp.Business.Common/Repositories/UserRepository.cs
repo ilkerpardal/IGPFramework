@@ -9,20 +9,33 @@ namespace Igp.Business.Common.Repositories
     public class UserRepository : IUserRepository
     {
         IConfiguration _configuration;
+        string _connectionString;
 
         public UserRepository(IConfiguration configuration)
         {
             _configuration = configuration;
+            _connectionString = configuration.GetConnectionString("sqlConnection");
         }
 
-        public async Task<UserDto> VerifyUser(string userName, string password)
+        public UserRepository(string connectionString)
         {
-            using (UserBL userBl = new UserBL(_configuration))
+            _connectionString = connectionString;
+        }
+        
+        public async Task<UserDto> VerifyUserAsync(string userName, string password)
+        {
+            using (UserBL userBl = new UserBL(_connectionString))
             {
-                return await userBl.VerifyUser(userName, password);
+                return await userBl.VerifyUserAsync(userName, password);
             }
         }
-
+        public UserDto VerifyUser(string userName, string password)
+        {
+            using (UserBL userBl = new UserBL(_connectionString))
+            {
+                return userBl.VerifyUser(userName, password);
+            }
+        }
         public void Dispose()
         {
 

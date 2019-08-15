@@ -30,7 +30,7 @@ namespace Igp.Api.Base.Services
             {
                 using (IUserRepository userRepo = new UserRepository(_configuration))
                 {
-                    var user = await userRepo.VerifyUser(userName, password);
+                    var user = await userRepo.VerifyUserAsync(userName, password);
                     if (user.IsAssigned())
                         user.Token = TokenHelper.GetToken(user);
                     return user;

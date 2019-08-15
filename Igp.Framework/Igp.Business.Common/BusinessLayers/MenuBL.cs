@@ -20,7 +20,12 @@ namespace Igp.Business.Common.BusinessLayers
 
         internal MenuBL(IConfiguration configuration)
         {
-            _context = new IGPCoreContext(new DbContextOptions<IGPCoreContext>(), configuration);
+            _context = new IGPCoreContext(new DbContextOptions<IGPCoreContext>(), configuration.GetConnectionString("sqlConnection"));
+        }
+
+        internal MenuBL(string connectionString)
+        {
+            _context = new IGPCoreContext(new DbContextOptions<IGPCoreContext>(), connectionString);
         }
 
         internal List<MenuDto> GetUserMenus(int userId)
@@ -36,6 +41,28 @@ namespace Igp.Business.Common.BusinessLayers
                 ParentId = x.ParentId
             });
             return userMenus.Map<List<MenuDto>>(ModelConfig.GetAllModelConfigrations());
+        }
+
+        internal List<MenuDto> GetMenus()
+        {
+            var userMenus = _context.Menu.Select(x =>
+            new Menu
+            {
+                 Id = x.Id,
+                MenuName = x.MenuName,
+                MenuUrl = x.MenuUrl,
+                ParentId = x.ParentId
+            });
+            return userMenus.Map<List<MenuDto>>(ModelConfig.GetAllModelConfigrations());
+        }
+
+        internal async Task SaveMenuTransaction(MenuTransactionDto menuTransaction)
+        {
+            MenuTransaction transaction = menuTransaction.Map<MenuTransaction>();
+            transaction.RecordUserId = UserHelper.UserIdentity.Id;
+            transaction.RecordDate = DateTime.Now;
+            await _context.MenuTransaction.AddAsync(transaction);
+            await _context.SaveChangesAsync();
         }
 
         void IDisposable.Dispose()

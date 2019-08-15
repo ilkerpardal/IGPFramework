@@ -9,5 +9,8 @@ namespace Igp.Business.Common.Repositories
     public interface IMenuRepository : IDisposable
     {
         Task<List<MenuDto>> GetUserMenus(int userId);
+        Task<List<MenuDto>> GetMenus();
+        Task SaveMenuTransaction(MenuTransactionDto model);
     }
+
 }

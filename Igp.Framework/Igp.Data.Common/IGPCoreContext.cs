@@ -7,16 +7,16 @@ namespace IgpFramework.Data
 {
     public class IGPCoreContext : DbContext
     {
-        IConfiguration _configuration = null;
+        string _connectionString = null;
         
-        public IGPCoreContext(DbContextOptions<IGPCoreContext> options, IConfiguration configuration) : base(options) 
+        public IGPCoreContext(DbContextOptions<IGPCoreContext> options, string connectionString) : base(options) 
         {
-            _configuration = configuration;
+            _connectionString = connectionString;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("sqlConnection"));
+            optionsBuilder.UseSqlServer(_connectionString);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

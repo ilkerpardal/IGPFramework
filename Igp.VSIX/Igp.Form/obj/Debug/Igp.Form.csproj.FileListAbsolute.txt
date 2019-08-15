@@ -1,0 +1,4 @@
+C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Debug\Igp.Form.csprojAssemblyReference.cache
+C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Debug\Igp.Form.Properties.Resources.resources
+C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Debug\Igp.Form.csproj.GenerateResource.cache
+C:\Projects\vs\Igp.VSIX\Igp.Form\obj\Debug\Igp.Form.csproj.CoreCompileInputs.cache

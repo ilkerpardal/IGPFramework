@@ -13,7 +13,7 @@ namespace Igp.Core.Helpers
             get
             {
                 return Thread.CurrentPrincipal?.Identity != null ?
-                       (Thread.CurrentPrincipal.Identity as Igp.Security.IgpIdentity).User : new UserDto();
+                       (Thread.CurrentPrincipal.Identity as Igp.Security.IgpIdentity)?.User : new UserDto();
             }
         }
     }

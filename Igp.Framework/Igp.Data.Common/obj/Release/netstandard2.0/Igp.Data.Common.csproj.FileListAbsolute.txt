@@ -1,0 +1,11 @@
+C:\Projects\vs\Igp.Framework\Igp.Data.Common\bin\Release\netstandard2.0\Igp.Data.Common.deps.json
+C:\Projects\vs\Igp.Framework\Igp.Data.Common\bin\Release\netstandard2.0\Igp.Data.Common.runtimeconfig.json
+C:\Projects\vs\Igp.Framework\Igp.Data.Common\bin\Release\netstandard2.0\Igp.Data.Common.runtimeconfig.dev.json
+C:\Projects\vs\Igp.Framework\Igp.Data.Common\bin\Release\netstandard2.0\Igp.Data.Common.dll
+C:\Projects\vs\Igp.Framework\Igp.Data.Common\bin\Release\netstandard2.0\Igp.Data.Common.pdb
+C:\Projects\vs\Igp.Framework\Igp.Data.Common\obj\Release\netstandard2.0\Igp.Data.Common.csprojAssemblyReference.cache
+C:\Projects\vs\Igp.Framework\Igp.Data.Common\obj\Release\netstandard2.0\Igp.Data.Common.csproj.CoreCompileInputs.cache
+C:\Projects\vs\Igp.Framework\Igp.Data.Common\obj\Release\netstandard2.0\Igp.Data.Common.AssemblyInfoInputs.cache
+C:\Projects\vs\Igp.Framework\Igp.Data.Common\obj\Release\netstandard2.0\Igp.Data.Common.AssemblyInfo.cs
+C:\Projects\vs\Igp.Framework\Igp.Data.Common\obj\Release\netstandard2.0\Igp.Data.Common.dll
+C:\Projects\vs\Igp.Framework\Igp.Data.Common\obj\Release\netstandard2.0\Igp.Data.Common.pdb

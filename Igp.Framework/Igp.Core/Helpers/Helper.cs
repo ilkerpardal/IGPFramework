@@ -33,5 +33,23 @@ namespace Igp.Core.Helpers
             }
 
         }
+
+        public static T Map<T>(this object source)
+        {
+            try
+            {
+                var config = new MapperConfiguration(cfg =>
+                {
+                    cfg.CreateMap(source.GetType(), typeof(T));
+                }
+                );
+                var mapper = config.CreateMapper();
+                return mapper.Map<T>(source);
+            }
+            catch (Exception ex)
+            {
+                return default(T);
+            }
+        }
     }
 }

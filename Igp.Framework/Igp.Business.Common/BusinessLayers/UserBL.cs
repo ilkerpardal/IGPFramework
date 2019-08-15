@@ -9,6 +9,7 @@ using Unit = Igp.Business.Common.UnitOfWork;
 using Igp.Dto.Common.Users;
 using Igp.Data.Common.Model.Users;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Igp.Business.Common.BusinessLayers
 {
@@ -21,11 +22,46 @@ namespace Igp.Business.Common.BusinessLayers
         internal UserBL(IConfiguration configuration)
         {
             _crypto = new Crypto();
-            _context = new IGPCoreContext(new DbContextOptions<IGPCoreContext>(), configuration);
+            _context = new IGPCoreContext(new DbContextOptions<IGPCoreContext>(), configuration.GetConnectionString("sqlConnection"));
             _unitofWork = new Unit.UnitOfWork(_context);
         }
 
-        internal async Task<UserDto> VerifyUser(string userName, string password)
+        internal UserBL(string connectionString)
+        {
+            _crypto = new Crypto();
+            _context = new IGPCoreContext(new DbContextOptions<IGPCoreContext>(), connectionString);
+            _unitofWork = new Unit.UnitOfWork(_context);
+        }
+        
+        internal UserDto VerifyUser(string userName, string password)
+        {
+            var passwordHash = _crypto.Md5Hashing(password);
+            User user = _context.User.Include(x => x.UserMenuPermissions).FirstOrDefault(x => x.UserName == userName);
+
+            if (user.IsAssigned())
+            {
+                if (user.Password == passwordHash)
+                {
+                    var dict = new Dictionary<Type, Type>();
+                    dict.Add(typeof(User), typeof(UserDto));
+                    dict.Add(typeof(UserMenu), typeof(UserMenuDto));
+                    dict.Add(typeof(UserTransaction), typeof(UserTransactionDto));
+
+                    var userDto = user.Map<UserDto>(dict);
+                    return userDto;
+                }
+                else
+                {
+                    throw new Exception("Password error");//ToDo: Mesajlara taşınacak 
+                }
+            }
+            else
+            {
+                throw new Exception("User not found");//ToDo: Mesajlara taşınacak 
+            }
+        }
+
+        internal async Task<UserDto> VerifyUserAsync(string userName, string password)
         {
             var passwordHash = _crypto.Md5Hashing(password);
             User user = await _context.User.Include(x=> x.UserMenuPermissions).FirstOrDefaultAsync(x => x.UserName == userName);

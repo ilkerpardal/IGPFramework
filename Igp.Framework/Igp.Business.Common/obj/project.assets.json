@@ -1893,6 +1893,7 @@
       "sha512": "ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
       "type": "package",
       "path": "newtonsoft.json/10.0.1",
+      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",

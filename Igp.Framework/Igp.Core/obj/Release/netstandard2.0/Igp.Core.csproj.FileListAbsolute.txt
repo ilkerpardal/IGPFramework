@@ -1,0 +1,16 @@
+C:\Projects\vs\Igp.Framework\Igp.Core\bin\Release\netstandard2.0\Igp.Core.deps.json
+C:\Projects\vs\Igp.Framework\Igp.Core\bin\Release\netstandard2.0\Igp.Core.dll
+C:\Projects\vs\Igp.Framework\Igp.Core\bin\Release\netstandard2.0\Igp.Core.pdb
+C:\Projects\vs\Igp.Framework\Igp.Core\bin\Release\netstandard2.0\Igp.Dto.Common.dll
+C:\Projects\vs\Igp.Framework\Igp.Core\bin\Release\netstandard2.0\Igp.Enums.Common.dll
+C:\Projects\vs\Igp.Framework\Igp.Core\bin\Release\netstandard2.0\Igp.Security.dll
+C:\Projects\vs\Igp.Framework\Igp.Core\bin\Release\netstandard2.0\Igp.Dto.Common.pdb
+C:\Projects\vs\Igp.Framework\Igp.Core\bin\Release\netstandard2.0\Igp.Security.pdb
+C:\Projects\vs\Igp.Framework\Igp.Core\bin\Release\netstandard2.0\Igp.Enums.Common.pdb
+C:\Projects\vs\Igp.Framework\Igp.Core\obj\Release\netstandard2.0\Igp.Core.csprojAssemblyReference.cache
+C:\Projects\vs\Igp.Framework\Igp.Core\obj\Release\netstandard2.0\Igp.Core.csproj.CoreCompileInputs.cache
+C:\Projects\vs\Igp.Framework\Igp.Core\obj\Release\netstandard2.0\Igp.Core.AssemblyInfoInputs.cache
+C:\Projects\vs\Igp.Framework\Igp.Core\obj\Release\netstandard2.0\Igp.Core.AssemblyInfo.cs
+C:\Projects\vs\Igp.Framework\Igp.Core\obj\Release\netstandard2.0\Igp.Core.csproj.CopyComplete
+C:\Projects\vs\Igp.Framework\Igp.Core\obj\Release\netstandard2.0\Igp.Core.dll
+C:\Projects\vs\Igp.Framework\Igp.Core\obj\Release\netstandard2.0\Igp.Core.pdb

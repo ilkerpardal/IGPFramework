@@ -51,5 +51,16 @@ namespace Igp.Api.Test.Controllers
                 return Ok(userMenus);
             }
         }
+
+        [AuthorizationIGP(AuthorizationTypes.Modify | AuthorizationTypes.Read)]
+        [Route("api/GetMenus")]
+        public IActionResult GetMenus()
+        {
+            using (IMenuRepository repo = new MenuRepository(_configuration))
+            {
+                var userMenus = repo.GetMenus().Result;
+                return Ok(userMenus);
+            }
+        }
     }
 }
